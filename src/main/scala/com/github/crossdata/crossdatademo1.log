@@ -1,0 +1,2048 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+16/11/07 16:29:04 INFO SparkContext: Running Spark version 1.6.2
+16/11/07 16:29:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/11/07 16:29:06 INFO SecurityManager: Changing view acls to: zhengqh
+16/11/07 16:29:06 INFO SecurityManager: Changing modify acls to: zhengqh
+16/11/07 16:29:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(zhengqh); users with modify permissions: Set(zhengqh)
+16/11/07 16:29:09 INFO Utils: Successfully started service 'sparkDriver' on port 63103.
+16/11/07 16:29:10 INFO Slf4jLogger: Slf4jLogger started
+16/11/07 16:29:10 INFO Remoting: Starting remoting
+16/11/07 16:29:11 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@10.57.2.26:63104]
+16/11/07 16:29:11 INFO Utils: Successfully started service 'sparkDriverActorSystem' on port 63104.
+16/11/07 16:29:11 INFO SparkEnv: Registering MapOutputTracker
+16/11/07 16:29:11 INFO SparkEnv: Registering BlockManagerMaster
+16/11/07 16:29:11 INFO DiskBlockManager: Created local directory at /private/var/folders/xc/x0b8crk9667ddh1zhfs29_zr0000gn/T/blockmgr-afb21963-3ac8-4e0a-84b3-15218b2f04e3
+16/11/07 16:29:11 INFO MemoryStore: MemoryStore started with capacity 457.9 MB
+16/11/07 16:29:12 INFO SparkEnv: Registering OutputCommitCoordinator
+16/11/07 16:29:13 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+16/11/07 16:29:13 INFO SparkUI: Started SparkUI at http://10.57.2.26:4040
+16/11/07 16:29:14 INFO Executor: Starting executor ID driver on host localhost
+16/11/07 16:29:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 63106.
+16/11/07 16:29:14 INFO NettyBlockTransferService: Server created on 63106
+16/11/07 16:29:14 INFO BlockManagerMaster: Trying to register BlockManager
+16/11/07 16:29:14 INFO BlockManagerMasterEndpoint: Registering block manager localhost:63106 with 457.9 MB RAM, BlockManagerId(driver, localhost, 63106)
+16/11/07 16:29:14 INFO BlockManagerMaster: Registered BlockManager
+16/11/07 16:29:17 WARN XDContext: User resource (core-application.conf) hasn't been found
+16/11/07 16:29:17 WARN XDContext: User file (core-application.conf) hasn't been found in classpath
+16/11/07 16:29:17 WARN XDContext: External file (/etc/sds/crossdata/server/core-application.conf) hasn't been found
+16/11/07 16:29:20 WARN CatalogUtils: There is no configured streaming catalog
+16/11/07 16:29:26 INFO SparkContext: Starting job: show at CrossDataDemo1.scala:18
+16/11/07 16:29:26 INFO DAGScheduler: Got job 0 (show at CrossDataDemo1.scala:18) with 1 output partitions
+16/11/07 16:29:26 INFO DAGScheduler: Final stage: ResultStage 0 (show at CrossDataDemo1.scala:18)
+16/11/07 16:29:26 INFO DAGScheduler: Parents of final stage: List()
+16/11/07 16:29:26 INFO DAGScheduler: Missing parents: List()
+16/11/07 16:29:27 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at show at CrossDataDemo1.scala:18), which has no missing parents
+16/11/07 16:29:27 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 1824.0 B, free 1824.0 B)
+16/11/07 16:29:28 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 1175.0 B, free 2.9 KB)
+16/11/07 16:29:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:63106 (size: 1175.0 B, free: 457.9 MB)
+16/11/07 16:29:28 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:28 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at show at CrossDataDemo1.scala:18)
+16/11/07 16:29:28 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+16/11/07 16:29:28 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,PROCESS_LOCAL, 2609 bytes)
+16/11/07 16:29:28 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+16/11/07 16:29:28 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1464 bytes result sent to driver
+16/11/07 16:29:28 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 273 ms on localhost (1/1)
+16/11/07 16:29:28 INFO DAGScheduler: ResultStage 0 (show at CrossDataDemo1.scala:18) finished in 0.353 s
+16/11/07 16:29:28 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+16/11/07 16:29:28 INFO DAGScheduler: Job 0 finished: show at CrossDataDemo1.scala:18, took 1.625961 s
++---------------------+-----------+
+|tableName            |isTemporary|
++---------------------+-----------+
+|forseti.mytab        |false      |
+|demo.tweets          |false      |
+|forseti.velocity_app |false      |
+|demo.test            |false      |
+|demo.shopping_centers|false      |
++---------------------+-----------+
+
+16/11/07 16:29:28 INFO Version: Elasticsearch Hadoop v2.3.3 [d284980369]
+16/11/07 16:29:30 WARN NettyUtil: Found Netty's native epoll transport, but not running on linux-based operating system. Using NIO instead.
+16/11/07 16:29:32 INFO Cluster: New Cassandra host /127.0.0.1:9042 added
+16/11/07 16:29:32 INFO CassandraConnector: Connected to Cassandra cluster: Test Cluster
+16/11/07 16:29:32 INFO DerbyCatalog: PersistentCatalog: Looking up table forseti.velocity_app
+16/11/07 16:29:33 WARN ImportTablesUsingWithOptions: IMPORT TABLE omitted already registered table: forseti.velocity_app
+16/11/07 16:29:33 INFO DerbyCatalog: PersistentCatalog: Looking up table forseti.mytab
+16/11/07 16:29:33 WARN ImportTablesUsingWithOptions: IMPORT TABLE omitted already registered table: forseti.mytab
+16/11/07 16:29:33 INFO DerbyCatalog: PersistentCatalog: Looking up table demo.test
+16/11/07 16:29:34 WARN ImportTablesUsingWithOptions: IMPORT TABLE omitted already registered table: demo.test
+16/11/07 16:29:34 INFO DerbyCatalog: PersistentCatalog: Looking up table demo.tweets
+16/11/07 16:29:34 WARN ImportTablesUsingWithOptions: IMPORT TABLE omitted already registered table: demo.tweets
+16/11/07 16:29:34 INFO DerbyCatalog: PersistentCatalog: Looking up table demo.shopping_centers
+16/11/07 16:29:34 WARN ImportTablesUsingWithOptions: IMPORT TABLE omitted already registered table: demo.shopping_centers
+16/11/07 16:29:34 INFO SparkContext: Starting job: show at CrossDataDemo1.scala:31
+16/11/07 16:29:34 INFO DAGScheduler: Got job 1 (show at CrossDataDemo1.scala:31) with 1 output partitions
+16/11/07 16:29:34 INFO DAGScheduler: Final stage: ResultStage 1 (show at CrossDataDemo1.scala:31)
+16/11/07 16:29:34 INFO DAGScheduler: Parents of final stage: List()
+16/11/07 16:29:34 INFO DAGScheduler: Missing parents: List()
+16/11/07 16:29:34 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[3] at show at CrossDataDemo1.scala:31), which has no missing parents
+16/11/07 16:29:34 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 1824.0 B, free 4.7 KB)
+16/11/07 16:29:34 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 1176.0 B, free 5.9 KB)
+16/11/07 16:29:34 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:63106 (size: 1176.0 B, free: 457.9 MB)
+16/11/07 16:29:34 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:34 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[3] at show at CrossDataDemo1.scala:31)
+16/11/07 16:29:34 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+16/11/07 16:29:34 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, partition 0,PROCESS_LOCAL, 2883 bytes)
+16/11/07 16:29:34 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+16/11/07 16:29:34 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1738 bytes result sent to driver
+16/11/07 16:29:34 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 21 ms on localhost (1/1)
+16/11/07 16:29:34 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool
+16/11/07 16:29:34 INFO DAGScheduler: ResultStage 1 (show at CrossDataDemo1.scala:31) finished in 0.023 s
+16/11/07 16:29:34 INFO DAGScheduler: Job 1 finished: show at CrossDataDemo1.scala:31, took 0.094955 s
++------------------------+-------+
+|tableIdentifier         |ignored|
++------------------------+-------+
+|[forseti, velocity_app] |true   |
+|[forseti, mytab]        |true   |
+|[demo, test]            |true   |
+|[demo, tweets]          |true   |
+|[demo, shopping_centers]|true   |
++------------------------+-------+
+
+16/11/07 16:29:34 INFO SparkContext: Starting job: show at CrossDataDemo1.scala:52
+16/11/07 16:29:34 INFO DAGScheduler: Got job 2 (show at CrossDataDemo1.scala:52) with 1 output partitions
+16/11/07 16:29:34 INFO DAGScheduler: Final stage: ResultStage 2 (show at CrossDataDemo1.scala:52)
+16/11/07 16:29:34 INFO DAGScheduler: Parents of final stage: List()
+16/11/07 16:29:34 INFO DAGScheduler: Missing parents: List()
+16/11/07 16:29:34 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[5] at show at CrossDataDemo1.scala:52), which has no missing parents
+16/11/07 16:29:34 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 1824.0 B, free 7.6 KB)
+16/11/07 16:29:34 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 1175.0 B, free 8.8 KB)
+16/11/07 16:29:34 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:63106 (size: 1175.0 B, free: 457.9 MB)
+16/11/07 16:29:34 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:34 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[5] at show at CrossDataDemo1.scala:52)
+16/11/07 16:29:34 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+16/11/07 16:29:34 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, localhost, partition 0,PROCESS_LOCAL, 2609 bytes)
+16/11/07 16:29:34 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+16/11/07 16:29:34 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1464 bytes result sent to driver
+16/11/07 16:29:34 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 11 ms on localhost (1/1)
+16/11/07 16:29:34 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool
+16/11/07 16:29:34 INFO DAGScheduler: ResultStage 2 (show at CrossDataDemo1.scala:52) finished in 0.012 s
+16/11/07 16:29:34 INFO DAGScheduler: Job 2 finished: show at CrossDataDemo1.scala:52, took 0.031243 s
++---------------------+-----------+
+|tableName            |isTemporary|
++---------------------+-----------+
+|forseti.mytab        |false      |
+|demo.tweets          |false      |
+|forseti.velocity_app |false      |
+|demo.test            |false      |
+|demo.shopping_centers|false      |
++---------------------+-----------+
+
+16/11/07 16:29:36 INFO SparkContext: Starting job: runJob at RDDFunctions.scala:37
+16/11/07 16:29:36 INFO DAGScheduler: Got job 3 (runJob at RDDFunctions.scala:37) with 4 output partitions
+16/11/07 16:29:36 INFO DAGScheduler: Final stage: ResultStage 3 (runJob at RDDFunctions.scala:37)
+16/11/07 16:29:36 INFO DAGScheduler: Parents of final stage: List()
+16/11/07 16:29:36 INFO DAGScheduler: Missing parents: List()
+16/11/07 16:29:36 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[7] at sql at CrossDataDemo1.scala:67), which has no missing parents
+16/11/07 16:29:36 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 10.7 KB, free 19.5 KB)
+16/11/07 16:29:36 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 5.1 KB, free 24.6 KB)
+16/11/07 16:29:36 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on localhost:63106 (size: 5.1 KB, free: 457.9 MB)
+16/11/07 16:29:36 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:36 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 3 (MapPartitionsRDD[7] at sql at CrossDataDemo1.scala:67)
+16/11/07 16:29:36 INFO TaskSchedulerImpl: Adding task set 3.0 with 4 tasks
+16/11/07 16:29:36 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, localhost, partition 0,PROCESS_LOCAL, 2451 bytes)
+16/11/07 16:29:36 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 4, localhost, partition 1,PROCESS_LOCAL, 2446 bytes)
+16/11/07 16:29:36 INFO TaskSetManager: Starting task 2.0 in stage 3.0 (TID 5, localhost, partition 2,PROCESS_LOCAL, 2448 bytes)
+16/11/07 16:29:36 INFO TaskSetManager: Starting task 3.0 in stage 3.0 (TID 6, localhost, partition 3,PROCESS_LOCAL, 2534 bytes)
+16/11/07 16:29:36 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+16/11/07 16:29:36 INFO Executor: Running task 1.0 in stage 3.0 (TID 4)
+16/11/07 16:29:36 INFO Executor: Running task 2.0 in stage 3.0 (TID 5)
+16/11/07 16:29:36 INFO Executor: Running task 3.0 in stage 3.0 (TID 6)
+16/11/07 16:29:36 INFO TableWriter: Wrote 1 rows to demo.shopping_centers in 0.268 s.
+16/11/07 16:29:36 INFO TableWriter: Wrote 2 rows to demo.shopping_centers in 0.268 s.
+16/11/07 16:29:36 INFO TableWriter: Wrote 1 rows to demo.shopping_centers in 0.266 s.
+16/11/07 16:29:36 INFO TableWriter: Wrote 1 rows to demo.shopping_centers in 0.268 s.
+16/11/07 16:29:36 INFO Executor: Finished task 2.0 in stage 3.0 (TID 5). 1864 bytes result sent to driver
+16/11/07 16:29:36 INFO Executor: Finished task 3.0 in stage 3.0 (TID 6). 1864 bytes result sent to driver
+16/11/07 16:29:36 INFO TaskSetManager: Finished task 2.0 in stage 3.0 (TID 5) in 396 ms on localhost (1/4)
+16/11/07 16:29:36 INFO TaskSetManager: Finished task 3.0 in stage 3.0 (TID 6) in 400 ms on localhost (2/4)
+16/11/07 16:29:36 INFO Executor: Finished task 1.0 in stage 3.0 (TID 4). 1864 bytes result sent to driver
+16/11/07 16:29:36 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 1864 bytes result sent to driver
+16/11/07 16:29:36 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 4) in 406 ms on localhost (3/4)
+16/11/07 16:29:36 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 419 ms on localhost (4/4)
+16/11/07 16:29:36 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool
+16/11/07 16:29:36 INFO DAGScheduler: ResultStage 3 (runJob at RDDFunctions.scala:37) finished in 0.422 s
+16/11/07 16:29:36 INFO DAGScheduler: Job 3 finished: runJob at RDDFunctions.scala:37, took 0.441838 s
+16/11/07 16:29:36 INFO SparkContext: Starting job: show at CrossDataDemo1.scala:72
+16/11/07 16:29:36 INFO DAGScheduler: Got job 4 (show at CrossDataDemo1.scala:72) with 1 output partitions
+16/11/07 16:29:36 INFO DAGScheduler: Final stage: ResultStage 4 (show at CrossDataDemo1.scala:72)
+16/11/07 16:29:36 INFO DAGScheduler: Parents of final stage: List()
+16/11/07 16:29:36 INFO DAGScheduler: Missing parents: List()
+16/11/07 16:29:36 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[9] at show at CrossDataDemo1.scala:72), which has no missing parents
+16/11/07 16:29:36 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 1824.0 B, free 26.4 KB)
+16/11/07 16:29:36 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 1176.0 B, free 27.5 KB)
+16/11/07 16:29:36 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on localhost:63106 (size: 1176.0 B, free: 457.9 MB)
+16/11/07 16:29:36 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:36 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[9] at show at CrossDataDemo1.scala:72)
+16/11/07 16:29:36 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+16/11/07 16:29:36 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 7, localhost, partition 0,PROCESS_LOCAL, 2342 bytes)
+16/11/07 16:29:36 INFO Executor: Running task 0.0 in stage 4.0 (TID 7)
+16/11/07 16:29:36 INFO Executor: Finished task 0.0 in stage 4.0 (TID 7). 1224 bytes result sent to driver
+16/11/07 16:29:36 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 7) in 13 ms on localhost (1/1)
+16/11/07 16:29:36 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool
+16/11/07 16:29:36 INFO DAGScheduler: ResultStage 4 (show at CrossDataDemo1.scala:72) finished in 0.014 s
+16/11/07 16:29:36 INFO DAGScheduler: Job 4 finished: show at CrossDataDemo1.scala:72, took 0.041399 s
++--------------------+
+|Number of insertions|
++--------------------+
+|5                   |
++--------------------+
+
+16/11/07 16:29:36 INFO ContextCleaner: Cleaned accumulator 4
+16/11/07 16:29:36 INFO BlockManagerInfo: Removed broadcast_4_piece0 on localhost:63106 in memory (size: 1176.0 B, free: 457.9 MB)
+16/11/07 16:29:36 INFO ContextCleaner: Cleaned accumulator 5
+16/11/07 16:29:36 INFO BlockManagerInfo: Removed broadcast_3_piece0 on localhost:63106 in memory (size: 5.1 KB, free: 457.9 MB)
+16/11/07 16:29:36 INFO BlockManagerInfo: Removed broadcast_2_piece0 on localhost:63106 in memory (size: 1175.0 B, free: 457.9 MB)
+16/11/07 16:29:36 INFO ContextCleaner: Cleaned accumulator 3
+16/11/07 16:29:36 INFO BlockManagerInfo: Removed broadcast_1_piece0 on localhost:63106 in memory (size: 1176.0 B, free: 457.9 MB)
+16/11/07 16:29:36 INFO ContextCleaner: Cleaned accumulator 2
+16/11/07 16:29:36 INFO DerbyCatalog: PersistentCatalog: Looking up table demo.sales
+16/11/07 16:29:38 INFO DerbyCatalog: PersistentCatalog: Looking up table demo.sales
+16/11/07 16:29:38 INFO DerbyCatalog: Persisting table sales
+16/11/07 16:29:39 INFO SparkContext: Starting job: show at CrossDataDemo1.scala:74
+16/11/07 16:29:39 INFO DAGScheduler: Got job 5 (show at CrossDataDemo1.scala:74) with 1 output partitions
+16/11/07 16:29:39 INFO DAGScheduler: Final stage: ResultStage 5 (show at CrossDataDemo1.scala:74)
+16/11/07 16:29:39 INFO DAGScheduler: Parents of final stage: List()
+16/11/07 16:29:39 INFO DAGScheduler: Missing parents: List()
+16/11/07 16:29:39 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[11] at show at CrossDataDemo1.scala:74), which has no missing parents
+16/11/07 16:29:39 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 1824.0 B, free 4.7 KB)
+16/11/07 16:29:39 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 1176.0 B, free 5.9 KB)
+16/11/07 16:29:39 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on localhost:63106 (size: 1176.0 B, free: 457.9 MB)
+16/11/07 16:29:39 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:39 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[11] at show at CrossDataDemo1.scala:74)
+16/11/07 16:29:39 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks
+16/11/07 16:29:39 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 8, localhost, partition 0,PROCESS_LOCAL, 2105 bytes)
+16/11/07 16:29:39 INFO Executor: Running task 0.0 in stage 5.0 (TID 8)
+16/11/07 16:29:39 INFO Executor: Finished task 0.0 in stage 5.0 (TID 8). 940 bytes result sent to driver
+16/11/07 16:29:39 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 8) in 13 ms on localhost (1/1)
+16/11/07 16:29:39 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool
+16/11/07 16:29:39 INFO DAGScheduler: ResultStage 5 (show at CrossDataDemo1.scala:74) finished in 0.014 s
+16/11/07 16:29:39 INFO DAGScheduler: Job 5 finished: show at CrossDataDemo1.scala:74, took 0.058663 s
+++
+||
+++
+++
+
+16/11/07 16:29:39 INFO SparkContext: Starting job: runJob at RDDFunctions.scala:37
+16/11/07 16:29:39 INFO DAGScheduler: Got job 6 (runJob at RDDFunctions.scala:37) with 4 output partitions
+16/11/07 16:29:39 INFO DAGScheduler: Final stage: ResultStage 6 (runJob at RDDFunctions.scala:37)
+16/11/07 16:29:39 INFO DAGScheduler: Parents of final stage: List()
+16/11/07 16:29:39 INFO DAGScheduler: Missing parents: List()
+16/11/07 16:29:39 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[13] at sql at CrossDataDemo1.scala:75), which has no missing parents
+16/11/07 16:29:39 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 10.5 KB, free 16.3 KB)
+16/11/07 16:29:39 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 5.0 KB, free 21.3 KB)
+16/11/07 16:29:39 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on localhost:63106 (size: 5.0 KB, free: 457.9 MB)
+16/11/07 16:29:39 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:39 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 6 (MapPartitionsRDD[13] at sql at CrossDataDemo1.scala:75)
+16/11/07 16:29:39 INFO TaskSchedulerImpl: Adding task set 6.0 with 4 tasks
+16/11/07 16:29:39 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 9, localhost, partition 0,PROCESS_LOCAL, 2422 bytes)
+16/11/07 16:29:39 INFO TaskSetManager: Starting task 1.0 in stage 6.0 (TID 10, localhost, partition 1,PROCESS_LOCAL, 2422 bytes)
+16/11/07 16:29:39 INFO TaskSetManager: Starting task 2.0 in stage 6.0 (TID 11, localhost, partition 2,PROCESS_LOCAL, 2424 bytes)
+16/11/07 16:29:39 INFO TaskSetManager: Starting task 3.0 in stage 6.0 (TID 12, localhost, partition 3,PROCESS_LOCAL, 2481 bytes)
+16/11/07 16:29:39 INFO Executor: Running task 0.0 in stage 6.0 (TID 9)
+16/11/07 16:29:39 INFO Executor: Running task 1.0 in stage 6.0 (TID 10)
+16/11/07 16:29:39 INFO Executor: Running task 3.0 in stage 6.0 (TID 12)
+16/11/07 16:29:39 INFO Executor: Running task 2.0 in stage 6.0 (TID 11)
+16/11/07 16:29:39 INFO TableWriter: Wrote 1 rows to demo.sales in 0.032 s.
+16/11/07 16:29:39 INFO Executor: Finished task 1.0 in stage 6.0 (TID 10). 1864 bytes result sent to driver
+16/11/07 16:29:39 INFO TableWriter: Wrote 1 rows to demo.sales in 0.036 s.
+16/11/07 16:29:39 INFO TableWriter: Wrote 1 rows to demo.sales in 0.035 s.
+16/11/07 16:29:39 INFO Executor: Finished task 2.0 in stage 6.0 (TID 11). 1864 bytes result sent to driver
+16/11/07 16:29:39 INFO Executor: Finished task 0.0 in stage 6.0 (TID 9). 1864 bytes result sent to driver
+16/11/07 16:29:39 INFO TaskSetManager: Finished task 1.0 in stage 6.0 (TID 10) in 51 ms on localhost (1/4)
+16/11/07 16:29:39 INFO TableWriter: Wrote 2 rows to demo.sales in 0.058 s.
+16/11/07 16:29:39 INFO TaskSetManager: Finished task 2.0 in stage 6.0 (TID 11) in 66 ms on localhost (2/4)
+16/11/07 16:29:39 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 9) in 71 ms on localhost (3/4)
+16/11/07 16:29:39 INFO Executor: Finished task 3.0 in stage 6.0 (TID 12). 1864 bytes result sent to driver
+16/11/07 16:29:39 INFO TaskSetManager: Finished task 3.0 in stage 6.0 (TID 12) in 74 ms on localhost (4/4)
+16/11/07 16:29:39 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool
+16/11/07 16:29:39 INFO DAGScheduler: ResultStage 6 (runJob at RDDFunctions.scala:37) finished in 0.088 s
+16/11/07 16:29:39 INFO DAGScheduler: Job 6 finished: runJob at RDDFunctions.scala:37, took 0.111628 s
+16/11/07 16:29:39 INFO SparkContext: Starting job: show at CrossDataDemo1.scala:80
+16/11/07 16:29:39 INFO DAGScheduler: Got job 7 (show at CrossDataDemo1.scala:80) with 1 output partitions
+16/11/07 16:29:39 INFO DAGScheduler: Final stage: ResultStage 7 (show at CrossDataDemo1.scala:80)
+16/11/07 16:29:39 INFO DAGScheduler: Parents of final stage: List()
+16/11/07 16:29:39 INFO DAGScheduler: Missing parents: List()
+16/11/07 16:29:39 INFO DAGScheduler: Submitting ResultStage 7 (MapPartitionsRDD[15] at show at CrossDataDemo1.scala:80), which has no missing parents
+16/11/07 16:29:39 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 1824.0 B, free 23.1 KB)
+16/11/07 16:29:39 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 1174.0 B, free 24.2 KB)
+16/11/07 16:29:39 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on localhost:63106 (size: 1174.0 B, free: 457.9 MB)
+16/11/07 16:29:39 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:39 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 7 (MapPartitionsRDD[15] at show at CrossDataDemo1.scala:80)
+16/11/07 16:29:39 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks
+16/11/07 16:29:39 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 13, localhost, partition 0,PROCESS_LOCAL, 2342 bytes)
+16/11/07 16:29:39 INFO Executor: Running task 0.0 in stage 7.0 (TID 13)
+16/11/07 16:29:39 INFO Executor: Finished task 0.0 in stage 7.0 (TID 13). 1224 bytes result sent to driver
+16/11/07 16:29:39 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 13) in 15 ms on localhost (1/1)
+16/11/07 16:29:39 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool
+16/11/07 16:29:39 INFO DAGScheduler: ResultStage 7 (show at CrossDataDemo1.scala:80) finished in 0.016 s
+16/11/07 16:29:39 INFO DAGScheduler: Job 7 finished: show at CrossDataDemo1.scala:80, took 0.040530 s
++--------------------+
+|Number of insertions|
++--------------------+
+|5                   |
++--------------------+
+
+16/11/07 16:29:39 INFO SparkContext: Starting job: show at CrossDataDemo1.scala:81
+16/11/07 16:29:39 INFO DAGScheduler: Got job 8 (show at CrossDataDemo1.scala:81) with 1 output partitions
+16/11/07 16:29:39 INFO DAGScheduler: Final stage: ResultStage 8 (show at CrossDataDemo1.scala:81)
+16/11/07 16:29:39 INFO DAGScheduler: Parents of final stage: List()
+16/11/07 16:29:39 INFO DAGScheduler: Missing parents: List()
+16/11/07 16:29:39 INFO DAGScheduler: Submitting ResultStage 8 (MapPartitionsRDD[17] at show at CrossDataDemo1.scala:81), which has no missing parents
+16/11/07 16:29:39 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 1824.0 B, free 26.0 KB)
+16/11/07 16:29:39 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 1176.0 B, free 27.2 KB)
+16/11/07 16:29:39 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on localhost:63106 (size: 1176.0 B, free: 457.9 MB)
+16/11/07 16:29:39 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:39 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[17] at show at CrossDataDemo1.scala:81)
+16/11/07 16:29:39 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks
+16/11/07 16:29:39 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 14, localhost, partition 0,PROCESS_LOCAL, 2653 bytes)
+16/11/07 16:29:39 INFO Executor: Running task 0.0 in stage 8.0 (TID 14)
+16/11/07 16:29:39 INFO Executor: Finished task 0.0 in stage 8.0 (TID 14). 1508 bytes result sent to driver
+16/11/07 16:29:39 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 14) in 6 ms on localhost (1/1)
+16/11/07 16:29:39 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool
+16/11/07 16:29:39 INFO DAGScheduler: ResultStage 8 (show at CrossDataDemo1.scala:81) finished in 0.008 s
+16/11/07 16:29:39 INFO DAGScheduler: Job 8 finished: show at CrossDataDemo1.scala:81, took 0.037018 s
++---------------------+-----------+
+|tableName            |isTemporary|
++---------------------+-----------+
+|forseti.mytab        |false      |
+|demo.sales           |false      |
+|demo.tweets          |false      |
+|forseti.velocity_app |false      |
+|demo.test            |false      |
+|demo.shopping_centers|false      |
++---------------------+-----------+
+
+16/11/07 16:29:40 INFO CassandraXDSourceRelation: filters: EqualTo(center,Madrid)
+16/11/07 16:29:40 INFO CassandraXDSourceRelation: Input Predicates: [EqualTo(center,Madrid)]
+16/11/07 16:29:40 INFO CassandraXDSourceRelation: pushdown filters: [Lorg.apache.spark.sql.sources.Filter;@270f7b4d
+16/11/07 16:29:40 INFO BlockManagerInfo: Removed broadcast_8_piece0 on localhost:63106 in memory (size: 1176.0 B, free: 457.9 MB)
+16/11/07 16:29:40 INFO ContextCleaner: Cleaned accumulator 9
+16/11/07 16:29:40 INFO BlockManagerInfo: Removed broadcast_7_piece0 on localhost:63106 in memory (size: 1174.0 B, free: 457.9 MB)
+16/11/07 16:29:40 INFO ContextCleaner: Cleaned accumulator 8
+16/11/07 16:29:40 INFO BlockManagerInfo: Removed broadcast_6_piece0 on localhost:63106 in memory (size: 5.0 KB, free: 457.9 MB)
+16/11/07 16:29:40 INFO ContextCleaner: Cleaned accumulator 7
+16/11/07 16:29:40 INFO BlockManagerInfo: Removed broadcast_5_piece0 on localhost:63106 in memory (size: 1176.0 B, free: 457.9 MB)
+16/11/07 16:29:40 INFO ContextCleaner: Cleaned accumulator 6
+16/11/07 16:29:41 INFO SparkContext: Starting job: show at CrossDataDemo1.scala:83
+16/11/07 16:29:41 INFO DAGScheduler: Got job 9 (show at CrossDataDemo1.scala:83) with 1 output partitions
+16/11/07 16:29:41 INFO DAGScheduler: Final stage: ResultStage 9 (show at CrossDataDemo1.scala:83)
+16/11/07 16:29:41 INFO DAGScheduler: Parents of final stage: List()
+16/11/07 16:29:41 INFO DAGScheduler: Missing parents: List()
+16/11/07 16:29:41 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[25] at show at CrossDataDemo1.scala:83), which has no missing parents
+16/11/07 16:29:41 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 12.5 KB, free 15.5 KB)
+16/11/07 16:29:41 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 6.3 KB, free 21.8 KB)
+16/11/07 16:29:41 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on localhost:63106 (size: 6.3 KB, free: 457.9 MB)
+16/11/07 16:29:41 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:41 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (MapPartitionsRDD[25] at show at CrossDataDemo1.scala:83)
+16/11/07 16:29:41 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks
+16/11/07 16:29:41 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 15, localhost, partition 0,NODE_LOCAL, 3531 bytes)
+16/11/07 16:29:41 INFO Executor: Running task 0.0 in stage 9.0 (TID 15)
+16/11/07 16:29:42 INFO GeneratePredicate: Code generated in 487.602805 ms
+16/11/07 16:29:42 INFO GenerateUnsafeProjection: Code generated in 22.231011 ms
+16/11/07 16:29:42 INFO GenerateSafeProjection: Code generated in 11.314564 ms
+16/11/07 16:29:42 INFO Executor: Finished task 0.0 in stage 9.0 (TID 15). 2716 bytes result sent to driver
+16/11/07 16:29:42 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 15) in 1041 ms on localhost (1/1)
+16/11/07 16:29:42 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool
+16/11/07 16:29:42 INFO DAGScheduler: ResultStage 9 (show at CrossDataDemo1.scala:83) finished in 1.044 s
+16/11/07 16:29:42 INFO DAGScheduler: Job 9 finished: show at CrossDataDemo1.scala:83, took 1.094388 s
++------+--------+-----+
+|center|products|total|
++------+--------+-----+
+|Madrid|51      |7700 |
++------+--------+-----+
+
+16/11/07 16:29:42 INFO CassandraXDSourceRelation: filters:
+16/11/07 16:29:42 INFO CassandraXDSourceRelation: Input Predicates: []
+16/11/07 16:29:42 INFO CassandraXDSourceRelation: pushdown filters: [Lorg.apache.spark.sql.sources.Filter;@39685204
+16/11/07 16:29:42 INFO CassandraXDSourceRelation: filters:
+16/11/07 16:29:42 INFO CassandraXDSourceRelation: Input Predicates: []
+16/11/07 16:29:42 INFO CassandraXDSourceRelation: pushdown filters: [Lorg.apache.spark.sql.sources.Filter;@43df1377
+16/11/07 16:29:43 INFO SparkContext: Starting job: show at CrossDataDemo1.scala:84
+16/11/07 16:29:43 INFO DAGScheduler: Registering RDD 36 (show at CrossDataDemo1.scala:84)
+16/11/07 16:29:43 INFO DAGScheduler: Registering RDD 32 (show at CrossDataDemo1.scala:84)
+16/11/07 16:29:43 INFO DAGScheduler: Got job 10 (show at CrossDataDemo1.scala:84) with 200 output partitions
+16/11/07 16:29:43 INFO DAGScheduler: Final stage: ResultStage 12 (show at CrossDataDemo1.scala:84)
+16/11/07 16:29:43 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 10, ShuffleMapStage 11)
+16/11/07 16:29:43 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 10, ShuffleMapStage 11)
+16/11/07 16:29:43 INFO DAGScheduler: Submitting ShuffleMapStage 10 (MapPartitionsRDD[36] at show at CrossDataDemo1.scala:84), which has no missing parents
+16/11/07 16:29:43 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 12.6 KB, free 34.4 KB)
+16/11/07 16:29:43 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 6.5 KB, free 40.9 KB)
+16/11/07 16:29:43 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on localhost:63106 (size: 6.5 KB, free: 457.9 MB)
+16/11/07 16:29:43 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:43 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[36] at show at CrossDataDemo1.scala:84)
+16/11/07 16:29:43 INFO TaskSchedulerImpl: Adding task set 10.0 with 1 tasks
+16/11/07 16:29:43 INFO DAGScheduler: Submitting ShuffleMapStage 11 (MapPartitionsRDD[32] at show at CrossDataDemo1.scala:84), which has no missing parents
+16/11/07 16:29:43 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 16, localhost, partition 0,NODE_LOCAL, 20003 bytes)
+16/11/07 16:29:43 INFO Executor: Running task 0.0 in stage 10.0 (TID 16)
+16/11/07 16:29:43 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 12.4 KB, free 53.3 KB)
+16/11/07 16:29:43 INFO BlockManagerInfo: Removed broadcast_9_piece0 on localhost:63106 in memory (size: 6.3 KB, free: 457.9 MB)
+16/11/07 16:29:43 INFO ContextCleaner: Cleaned accumulator 14
+16/11/07 16:29:43 INFO ContextCleaner: Cleaned accumulator 13
+16/11/07 16:29:43 INFO ContextCleaner: Cleaned accumulator 12
+16/11/07 16:29:43 INFO ContextCleaner: Cleaned accumulator 11
+16/11/07 16:29:43 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 6.4 KB, free 40.8 KB)
+16/11/07 16:29:43 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on localhost:63106 (size: 6.4 KB, free: 457.9 MB)
+16/11/07 16:29:43 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:43 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 11 (MapPartitionsRDD[32] at show at CrossDataDemo1.scala:84)
+16/11/07 16:29:43 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks
+16/11/07 16:29:43 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 17, localhost, partition 0,NODE_LOCAL, 20003 bytes)
+16/11/07 16:29:43 INFO Executor: Running task 0.0 in stage 11.0 (TID 17)
+16/11/07 16:29:43 INFO GenerateUnsafeProjection: Code generated in 16.793185 ms
+16/11/07 16:29:44 INFO GenerateMutableProjection: Code generated in 11.11511 ms
+16/11/07 16:29:46 INFO Executor: Finished task 0.0 in stage 11.0 (TID 17). 2600 bytes result sent to driver
+16/11/07 16:29:46 INFO Executor: Finished task 0.0 in stage 10.0 (TID 16). 2600 bytes result sent to driver
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 16) in 2255 ms on localhost (1/1)
+16/11/07 16:29:46 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 17) in 2170 ms on localhost (1/1)
+16/11/07 16:29:46 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool
+16/11/07 16:29:46 INFO DAGScheduler: ShuffleMapStage 10 (show at CrossDataDemo1.scala:84) finished in 2.258 s
+16/11/07 16:29:46 INFO DAGScheduler: looking for newly runnable stages
+16/11/07 16:29:46 INFO DAGScheduler: running: Set(ShuffleMapStage 11)
+16/11/07 16:29:46 INFO DAGScheduler: waiting: Set(ResultStage 12)
+16/11/07 16:29:46 INFO DAGScheduler: failed: Set()
+16/11/07 16:29:46 INFO DAGScheduler: ShuffleMapStage 11 (show at CrossDataDemo1.scala:84) finished in 2.184 s
+16/11/07 16:29:46 INFO DAGScheduler: looking for newly runnable stages
+16/11/07 16:29:46 INFO DAGScheduler: running: Set()
+16/11/07 16:29:46 INFO DAGScheduler: waiting: Set(ResultStage 12)
+16/11/07 16:29:46 INFO DAGScheduler: failed: Set()
+16/11/07 16:29:46 INFO DAGScheduler: Submitting ResultStage 12 (MapPartitionsRDD[43] at show at CrossDataDemo1.scala:84), which has no missing parents
+16/11/07 16:29:46 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 20.9 KB, free 61.8 KB)
+16/11/07 16:29:46 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 10.2 KB, free 72.0 KB)
+16/11/07 16:29:46 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on localhost:63106 (size: 10.2 KB, free: 457.9 MB)
+16/11/07 16:29:46 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1006
+16/11/07 16:29:46 INFO DAGScheduler: Submitting 200 missing tasks from ResultStage 12 (MapPartitionsRDD[43] at show at CrossDataDemo1.scala:84)
+16/11/07 16:29:46 INFO TaskSchedulerImpl: Adding task set 12.0 with 200 tasks
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 18, localhost, partition 0,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 1.0 in stage 12.0 (TID 19, localhost, partition 1,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 2.0 in stage 12.0 (TID 20, localhost, partition 2,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 3.0 in stage 12.0 (TID 21, localhost, partition 3,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO Executor: Running task 3.0 in stage 12.0 (TID 21)
+16/11/07 16:29:46 INFO Executor: Running task 2.0 in stage 12.0 (TID 20)
+16/11/07 16:29:46 INFO Executor: Running task 0.0 in stage 12.0 (TID 18)
+16/11/07 16:29:46 INFO Executor: Running task 1.0 in stage 12.0 (TID 19)
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 22 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 25 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 28 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 29 ms
+16/11/07 16:29:46 INFO GenerateOrdering: Code generated in 35.06973 ms
+16/11/07 16:29:46 INFO GenerateUnsafeProjection: Code generated in 22.866046 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:46 INFO GenerateUnsafeProjection: Code generated in 11.859705 ms
+16/11/07 16:29:46 INFO GenerateUnsafeProjection: Code generated in 15.902716 ms
+16/11/07 16:29:46 INFO GenerateSafeProjection: Code generated in 19.259239 ms
+16/11/07 16:29:46 INFO Executor: Finished task 0.0 in stage 12.0 (TID 18). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO Executor: Finished task 1.0 in stage 12.0 (TID 19). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO Executor: Finished task 3.0 in stage 12.0 (TID 21). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO Executor: Finished task 2.0 in stage 12.0 (TID 20). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 4.0 in stage 12.0 (TID 22, localhost, partition 4,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO Executor: Running task 4.0 in stage 12.0 (TID 22)
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 5.0 in stage 12.0 (TID 23, localhost, partition 5,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO Executor: Running task 5.0 in stage 12.0 (TID 23)
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 6.0 in stage 12.0 (TID 24, localhost, partition 6,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 7.0 in stage 12.0 (TID 25, localhost, partition 7,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 18) in 630 ms on localhost (1/200)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 3.0 in stage 12.0 (TID 21) in 626 ms on localhost (2/200)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 1.0 in stage 12.0 (TID 19) in 626 ms on localhost (3/200)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 2.0 in stage 12.0 (TID 20) in 627 ms on localhost (4/200)
+16/11/07 16:29:46 INFO Executor: Running task 6.0 in stage 12.0 (TID 24)
+16/11/07 16:29:46 INFO Executor: Running task 7.0 in stage 12.0 (TID 25)
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO Executor: Finished task 4.0 in stage 12.0 (TID 22). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO Executor: Finished task 6.0 in stage 12.0 (TID 24). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO Executor: Finished task 5.0 in stage 12.0 (TID 23). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 8.0 in stage 12.0 (TID 26, localhost, partition 8,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO Executor: Running task 8.0 in stage 12.0 (TID 26)
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 9.0 in stage 12.0 (TID 27, localhost, partition 9,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 4.0 in stage 12.0 (TID 22) in 35 ms on localhost (5/200)
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 10.0 in stage 12.0 (TID 28, localhost, partition 10,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 6.0 in stage 12.0 (TID 24) in 35 ms on localhost (6/200)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 5.0 in stage 12.0 (TID 23) in 36 ms on localhost (7/200)
+16/11/07 16:29:46 INFO Executor: Running task 9.0 in stage 12.0 (TID 27)
+16/11/07 16:29:46 INFO Executor: Running task 10.0 in stage 12.0 (TID 28)
+16/11/07 16:29:46 INFO Executor: Finished task 7.0 in stage 12.0 (TID 25). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 11.0 in stage 12.0 (TID 29, localhost, partition 11,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:46 INFO Executor: Running task 11.0 in stage 12.0 (TID 29)
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 7.0 in stage 12.0 (TID 25) in 42 ms on localhost (8/200)
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO Executor: Finished task 10.0 in stage 12.0 (TID 28). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO Executor: Finished task 9.0 in stage 12.0 (TID 27). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 12.0 in stage 12.0 (TID 30, localhost, partition 12,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 13.0 in stage 12.0 (TID 31, localhost, partition 13,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO Executor: Running task 13.0 in stage 12.0 (TID 31)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 10.0 in stage 12.0 (TID 28) in 21 ms on localhost (9/200)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 9.0 in stage 12.0 (TID 27) in 22 ms on localhost (10/200)
+16/11/07 16:29:46 INFO Executor: Running task 12.0 in stage 12.0 (TID 30)
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 9 ms
+16/11/07 16:29:46 INFO Executor: Finished task 11.0 in stage 12.0 (TID 29). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 14.0 in stage 12.0 (TID 32, localhost, partition 14,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO Executor: Running task 14.0 in stage 12.0 (TID 32)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 11.0 in stage 12.0 (TID 29) in 17 ms on localhost (11/200)
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO Executor: Finished task 8.0 in stage 12.0 (TID 26). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 15.0 in stage 12.0 (TID 33, localhost, partition 15,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO Executor: Running task 15.0 in stage 12.0 (TID 33)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 8.0 in stage 12.0 (TID 26) in 36 ms on localhost (12/200)
+16/11/07 16:29:46 INFO Executor: Finished task 14.0 in stage 12.0 (TID 32). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 16.0 in stage 12.0 (TID 34, localhost, partition 16,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO Executor: Running task 16.0 in stage 12.0 (TID 34)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 14.0 in stage 12.0 (TID 32) in 18 ms on localhost (13/200)
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:46 INFO Executor: Finished task 15.0 in stage 12.0 (TID 33). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 17.0 in stage 12.0 (TID 35, localhost, partition 17,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 15.0 in stage 12.0 (TID 33) in 18 ms on localhost (14/200)
+16/11/07 16:29:46 INFO Executor: Running task 17.0 in stage 12.0 (TID 35)
+16/11/07 16:29:46 INFO Executor: Finished task 16.0 in stage 12.0 (TID 34). 2821 bytes result sent to driver
+16/11/07 16:29:46 INFO TaskSetManager: Starting task 18.0 in stage 12.0 (TID 36, localhost, partition 18,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:46 INFO Executor: Running task 18.0 in stage 12.0 (TID 36)
+16/11/07 16:29:46 INFO TaskSetManager: Finished task 16.0 in stage 12.0 (TID 34) in 21 ms on localhost (15/200)
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO BlockManagerInfo: Removed broadcast_11_piece0 on localhost:63106 in memory (size: 6.4 KB, free: 457.9 MB)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO BlockManagerInfo: Removed broadcast_10_piece0 on localhost:63106 in memory (size: 6.5 KB, free: 457.9 MB)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 10 ms
+16/11/07 16:29:47 INFO Executor: Finished task 18.0 in stage 12.0 (TID 36). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 19.0 in stage 12.0 (TID 37, localhost, partition 19,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 19.0 in stage 12.0 (TID 37)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 18.0 in stage 12.0 (TID 36) in 72 ms on localhost (16/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO Executor: Finished task 12.0 in stage 12.0 (TID 30). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 20.0 in stage 12.0 (TID 38, localhost, partition 20,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 12.0 in stage 12.0 (TID 30) in 118 ms on localhost (17/200)
+16/11/07 16:29:47 INFO Executor: Running task 20.0 in stage 12.0 (TID 38)
+16/11/07 16:29:47 INFO Executor: Finished task 19.0 in stage 12.0 (TID 37). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 21.0 in stage 12.0 (TID 39, localhost, partition 21,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 21.0 in stage 12.0 (TID 39)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 19.0 in stage 12.0 (TID 37) in 27 ms on localhost (18/200)
+16/11/07 16:29:47 INFO Executor: Finished task 17.0 in stage 12.0 (TID 35). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 22.0 in stage 12.0 (TID 40, localhost, partition 22,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 17.0 in stage 12.0 (TID 35) in 110 ms on localhost (19/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 13.0 in stage 12.0 (TID 31). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 23.0 in stage 12.0 (TID 41, localhost, partition 23,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 13.0 in stage 12.0 (TID 31) in 144 ms on localhost (20/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Running task 22.0 in stage 12.0 (TID 40)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 20.0 in stage 12.0 (TID 38). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 24.0 in stage 12.0 (TID 42, localhost, partition 24,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 20.0 in stage 12.0 (TID 38) in 40 ms on localhost (21/200)
+16/11/07 16:29:47 INFO Executor: Running task 23.0 in stage 12.0 (TID 41)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Running task 24.0 in stage 12.0 (TID 42)
+16/11/07 16:29:47 INFO Executor: Finished task 21.0 in stage 12.0 (TID 39). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 25.0 in stage 12.0 (TID 43, localhost, partition 25,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 25.0 in stage 12.0 (TID 43)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 21.0 in stage 12.0 (TID 39) in 166 ms on localhost (22/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 24.0 in stage 12.0 (TID 42). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 26.0 in stage 12.0 (TID 44, localhost, partition 26,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 26.0 in stage 12.0 (TID 44)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 24.0 in stage 12.0 (TID 42) in 157 ms on localhost (23/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 22.0 in stage 12.0 (TID 40). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 27.0 in stage 12.0 (TID 45, localhost, partition 27,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 27.0 in stage 12.0 (TID 45)
+16/11/07 16:29:47 INFO Executor: Finished task 23.0 in stage 12.0 (TID 41). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 28.0 in stage 12.0 (TID 46, localhost, partition 28,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 28.0 in stage 12.0 (TID 46)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 23.0 in stage 12.0 (TID 41) in 184 ms on localhost (24/200)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 22.0 in stage 12.0 (TID 40) in 188 ms on localhost (25/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 26.0 in stage 12.0 (TID 44). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 29.0 in stage 12.0 (TID 47, localhost, partition 29,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 29.0 in stage 12.0 (TID 47)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 26.0 in stage 12.0 (TID 44) in 32 ms on localhost (26/200)
+16/11/07 16:29:47 INFO Executor: Finished task 28.0 in stage 12.0 (TID 46). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 30.0 in stage 12.0 (TID 48, localhost, partition 30,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Running task 30.0 in stage 12.0 (TID 48)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 28.0 in stage 12.0 (TID 46) in 20 ms on localhost (27/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 29.0 in stage 12.0 (TID 47). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 31.0 in stage 12.0 (TID 49, localhost, partition 31,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 31.0 in stage 12.0 (TID 49)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 29.0 in stage 12.0 (TID 47) in 16 ms on localhost (28/200)
+16/11/07 16:29:47 INFO Executor: Finished task 25.0 in stage 12.0 (TID 43). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 32.0 in stage 12.0 (TID 50, localhost, partition 32,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 25.0 in stage 12.0 (TID 43) in 63 ms on localhost (29/200)
+16/11/07 16:29:47 INFO Executor: Running task 32.0 in stage 12.0 (TID 50)
+16/11/07 16:29:47 INFO Executor: Finished task 27.0 in stage 12.0 (TID 45). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 33.0 in stage 12.0 (TID 51, localhost, partition 33,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 27.0 in stage 12.0 (TID 45) in 55 ms on localhost (30/200)
+16/11/07 16:29:47 INFO Executor: Running task 33.0 in stage 12.0 (TID 51)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 30.0 in stage 12.0 (TID 48). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 34.0 in stage 12.0 (TID 52, localhost, partition 34,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 34.0 in stage 12.0 (TID 52)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 30.0 in stage 12.0 (TID 48) in 47 ms on localhost (31/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO Executor: Finished task 33.0 in stage 12.0 (TID 51). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 35.0 in stage 12.0 (TID 53, localhost, partition 35,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 35.0 in stage 12.0 (TID 53)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 33.0 in stage 12.0 (TID 51) in 24 ms on localhost (32/200)
+16/11/07 16:29:47 INFO Executor: Finished task 34.0 in stage 12.0 (TID 52). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 36.0 in stage 12.0 (TID 54, localhost, partition 36,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 36.0 in stage 12.0 (TID 54)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 34.0 in stage 12.0 (TID 52) in 18 ms on localhost (33/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 36.0 in stage 12.0 (TID 54). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 37.0 in stage 12.0 (TID 55, localhost, partition 37,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 37.0 in stage 12.0 (TID 55)
+16/11/07 16:29:47 INFO Executor: Finished task 32.0 in stage 12.0 (TID 50). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 36.0 in stage 12.0 (TID 54) in 22 ms on localhost (34/200)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 38.0 in stage 12.0 (TID 56, localhost, partition 38,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 32.0 in stage 12.0 (TID 50) in 69 ms on localhost (35/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Running task 38.0 in stage 12.0 (TID 56)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Finished task 37.0 in stage 12.0 (TID 55). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 39.0 in stage 12.0 (TID 57, localhost, partition 39,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 39.0 in stage 12.0 (TID 57)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 37.0 in stage 12.0 (TID 55) in 57 ms on localhost (36/200)
+16/11/07 16:29:47 INFO Executor: Finished task 35.0 in stage 12.0 (TID 53). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO Executor: Finished task 31.0 in stage 12.0 (TID 49). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 40.0 in stage 12.0 (TID 58, localhost, partition 40,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 41.0 in stage 12.0 (TID 59, localhost, partition 41,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 35.0 in stage 12.0 (TID 53) in 91 ms on localhost (37/200)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 31.0 in stage 12.0 (TID 49) in 137 ms on localhost (38/200)
+16/11/07 16:29:47 INFO Executor: Running task 40.0 in stage 12.0 (TID 58)
+16/11/07 16:29:47 INFO Executor: Running task 41.0 in stage 12.0 (TID 59)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Finished task 38.0 in stage 12.0 (TID 56). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 42.0 in stage 12.0 (TID 60, localhost, partition 42,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 38.0 in stage 12.0 (TID 56) in 88 ms on localhost (39/200)
+16/11/07 16:29:47 INFO Executor: Running task 42.0 in stage 12.0 (TID 60)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 41.0 in stage 12.0 (TID 59). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 43.0 in stage 12.0 (TID 61, localhost, partition 43,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 41.0 in stage 12.0 (TID 59) in 34 ms on localhost (40/200)
+16/11/07 16:29:47 INFO Executor: Running task 43.0 in stage 12.0 (TID 61)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 39.0 in stage 12.0 (TID 57). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 44.0 in stage 12.0 (TID 62, localhost, partition 44,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 44.0 in stage 12.0 (TID 62)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 39.0 in stage 12.0 (TID 57) in 54 ms on localhost (41/200)
+16/11/07 16:29:47 INFO Executor: Finished task 42.0 in stage 12.0 (TID 60). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 45.0 in stage 12.0 (TID 63, localhost, partition 45,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Finished task 43.0 in stage 12.0 (TID 61). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO Executor: Running task 45.0 in stage 12.0 (TID 63)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 46.0 in stage 12.0 (TID 64, localhost, partition 46,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 42.0 in stage 12.0 (TID 60) in 25 ms on localhost (42/200)
+16/11/07 16:29:47 INFO Executor: Running task 46.0 in stage 12.0 (TID 64)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 43.0 in stage 12.0 (TID 61) in 19 ms on localhost (43/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 40.0 in stage 12.0 (TID 58). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 47.0 in stage 12.0 (TID 65, localhost, partition 47,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 40.0 in stage 12.0 (TID 58) in 62 ms on localhost (44/200)
+16/11/07 16:29:47 INFO Executor: Finished task 45.0 in stage 12.0 (TID 63). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO Executor: Running task 47.0 in stage 12.0 (TID 65)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 48.0 in stage 12.0 (TID 66, localhost, partition 48,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 48.0 in stage 12.0 (TID 66)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 45.0 in stage 12.0 (TID 63) in 15 ms on localhost (45/200)
+16/11/07 16:29:47 INFO Executor: Finished task 44.0 in stage 12.0 (TID 62). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 49.0 in stage 12.0 (TID 67, localhost, partition 49,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 49.0 in stage 12.0 (TID 67)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 44.0 in stage 12.0 (TID 62) in 25 ms on localhost (46/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Finished task 48.0 in stage 12.0 (TID 66). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 50.0 in stage 12.0 (TID 68, localhost, partition 50,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 50.0 in stage 12.0 (TID 68)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 48.0 in stage 12.0 (TID 66) in 20 ms on localhost (47/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Finished task 49.0 in stage 12.0 (TID 67). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 51.0 in stage 12.0 (TID 69, localhost, partition 51,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 49.0 in stage 12.0 (TID 67) in 38 ms on localhost (48/200)
+16/11/07 16:29:47 INFO Executor: Finished task 50.0 in stage 12.0 (TID 68). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 52.0 in stage 12.0 (TID 70, localhost, partition 52,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 52.0 in stage 12.0 (TID 70)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 50.0 in stage 12.0 (TID 68) in 31 ms on localhost (49/200)
+16/11/07 16:29:47 INFO Executor: Running task 51.0 in stage 12.0 (TID 69)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Finished task 52.0 in stage 12.0 (TID 70). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 53.0 in stage 12.0 (TID 71, localhost, partition 53,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 52.0 in stage 12.0 (TID 70) in 43 ms on localhost (50/200)
+16/11/07 16:29:47 INFO Executor: Running task 53.0 in stage 12.0 (TID 71)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Finished task 47.0 in stage 12.0 (TID 65). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 54.0 in stage 12.0 (TID 72, localhost, partition 54,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 47.0 in stage 12.0 (TID 65) in 118 ms on localhost (51/200)
+16/11/07 16:29:47 INFO Executor: Running task 54.0 in stage 12.0 (TID 72)
+16/11/07 16:29:47 INFO Executor: Finished task 51.0 in stage 12.0 (TID 69). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 55.0 in stage 12.0 (TID 73, localhost, partition 55,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 51.0 in stage 12.0 (TID 69) in 80 ms on localhost (52/200)
+16/11/07 16:29:47 INFO Executor: Finished task 46.0 in stage 12.0 (TID 64). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 56.0 in stage 12.0 (TID 74, localhost, partition 56,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 56.0 in stage 12.0 (TID 74)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 46.0 in stage 12.0 (TID 64) in 140 ms on localhost (53/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 53.0 in stage 12.0 (TID 71). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 57.0 in stage 12.0 (TID 75, localhost, partition 57,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 57.0 in stage 12.0 (TID 75)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 53.0 in stage 12.0 (TID 71) in 66 ms on localhost (54/200)
+16/11/07 16:29:47 INFO Executor: Finished task 54.0 in stage 12.0 (TID 72). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 58.0 in stage 12.0 (TID 76, localhost, partition 58,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 55.0 in stage 12.0 (TID 73)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 54.0 in stage 12.0 (TID 72) in 48 ms on localhost (55/200)
+16/11/07 16:29:47 INFO Executor: Running task 58.0 in stage 12.0 (TID 76)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 56.0 in stage 12.0 (TID 74). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 59.0 in stage 12.0 (TID 77, localhost, partition 59,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 59.0 in stage 12.0 (TID 77)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 56.0 in stage 12.0 (TID 74) in 48 ms on localhost (56/200)
+16/11/07 16:29:47 INFO Executor: Finished task 57.0 in stage 12.0 (TID 75). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 60.0 in stage 12.0 (TID 78, localhost, partition 60,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Finished task 58.0 in stage 12.0 (TID 76). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 61.0 in stage 12.0 (TID 79, localhost, partition 61,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 57.0 in stage 12.0 (TID 75) in 24 ms on localhost (57/200)
+16/11/07 16:29:47 INFO Executor: Running task 61.0 in stage 12.0 (TID 79)
+16/11/07 16:29:47 INFO Executor: Running task 60.0 in stage 12.0 (TID 78)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 58.0 in stage 12.0 (TID 76) in 19 ms on localhost (58/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 55.0 in stage 12.0 (TID 73). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 62.0 in stage 12.0 (TID 80, localhost, partition 62,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 62.0 in stage 12.0 (TID 80)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 55.0 in stage 12.0 (TID 73) in 68 ms on localhost (59/200)
+16/11/07 16:29:47 INFO Executor: Finished task 61.0 in stage 12.0 (TID 79). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 63.0 in stage 12.0 (TID 81, localhost, partition 63,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 63.0 in stage 12.0 (TID 81)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 61.0 in stage 12.0 (TID 79) in 13 ms on localhost (60/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 60.0 in stage 12.0 (TID 78). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 64.0 in stage 12.0 (TID 82, localhost, partition 64,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 64.0 in stage 12.0 (TID 82)
+16/11/07 16:29:47 INFO Executor: Finished task 59.0 in stage 12.0 (TID 77). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 65.0 in stage 12.0 (TID 83, localhost, partition 65,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 60.0 in stage 12.0 (TID 78) in 30 ms on localhost (61/200)
+16/11/07 16:29:47 INFO Executor: Running task 65.0 in stage 12.0 (TID 83)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 59.0 in stage 12.0 (TID 77) in 35 ms on localhost (62/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 64.0 in stage 12.0 (TID 82). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 66.0 in stage 12.0 (TID 84, localhost, partition 66,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 66.0 in stage 12.0 (TID 84)
+16/11/07 16:29:47 INFO Executor: Finished task 65.0 in stage 12.0 (TID 83). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 64.0 in stage 12.0 (TID 82) in 13 ms on localhost (63/200)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 67.0 in stage 12.0 (TID 85, localhost, partition 67,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 67.0 in stage 12.0 (TID 85)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 65.0 in stage 12.0 (TID 83) in 14 ms on localhost (64/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 66.0 in stage 12.0 (TID 84). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 68.0 in stage 12.0 (TID 86, localhost, partition 68,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 68.0 in stage 12.0 (TID 86)
+16/11/07 16:29:47 INFO Executor: Finished task 67.0 in stage 12.0 (TID 85). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 66.0 in stage 12.0 (TID 84) in 14 ms on localhost (65/200)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 69.0 in stage 12.0 (TID 87, localhost, partition 69,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 69.0 in stage 12.0 (TID 87)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 67.0 in stage 12.0 (TID 85) in 15 ms on localhost (66/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 62.0 in stage 12.0 (TID 80). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO Executor: Finished task 69.0 in stage 12.0 (TID 87). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 70.0 in stage 12.0 (TID 88, localhost, partition 70,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 71.0 in stage 12.0 (TID 89, localhost, partition 71,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 69.0 in stage 12.0 (TID 87) in 15 ms on localhost (67/200)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 62.0 in stage 12.0 (TID 80) in 61 ms on localhost (68/200)
+16/11/07 16:29:47 INFO Executor: Finished task 68.0 in stage 12.0 (TID 86). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 72.0 in stage 12.0 (TID 90, localhost, partition 72,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 68.0 in stage 12.0 (TID 86) in 29 ms on localhost (69/200)
+16/11/07 16:29:47 INFO Executor: Running task 71.0 in stage 12.0 (TID 89)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Running task 72.0 in stage 12.0 (TID 90)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Finished task 71.0 in stage 12.0 (TID 89). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 73.0 in stage 12.0 (TID 91, localhost, partition 73,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 73.0 in stage 12.0 (TID 91)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 71.0 in stage 12.0 (TID 89) in 66 ms on localhost (70/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 72.0 in stage 12.0 (TID 90). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 74.0 in stage 12.0 (TID 92, localhost, partition 74,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 74.0 in stage 12.0 (TID 92)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 72.0 in stage 12.0 (TID 90) in 71 ms on localhost (71/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 74.0 in stage 12.0 (TID 92). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 75.0 in stage 12.0 (TID 93, localhost, partition 75,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 75.0 in stage 12.0 (TID 93)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 74.0 in stage 12.0 (TID 92) in 23 ms on localhost (72/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 63.0 in stage 12.0 (TID 81). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO Executor: Finished task 75.0 in stage 12.0 (TID 93). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 76.0 in stage 12.0 (TID 94, localhost, partition 76,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 76.0 in stage 12.0 (TID 94)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 77.0 in stage 12.0 (TID 95, localhost, partition 77,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 70.0 in stage 12.0 (TID 88)
+16/11/07 16:29:47 INFO Executor: Running task 77.0 in stage 12.0 (TID 95)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 63.0 in stage 12.0 (TID 81) in 180 ms on localhost (73/200)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 75.0 in stage 12.0 (TID 93) in 24 ms on localhost (74/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Finished task 73.0 in stage 12.0 (TID 91). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 78.0 in stage 12.0 (TID 96, localhost, partition 78,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 73.0 in stage 12.0 (TID 91) in 66 ms on localhost (75/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Running task 78.0 in stage 12.0 (TID 96)
+16/11/07 16:29:47 INFO Executor: Finished task 70.0 in stage 12.0 (TID 88). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 79.0 in stage 12.0 (TID 97, localhost, partition 79,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 79.0 in stage 12.0 (TID 97)
+16/11/07 16:29:47 INFO Executor: Finished task 77.0 in stage 12.0 (TID 95). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 70.0 in stage 12.0 (TID 88) in 138 ms on localhost (76/200)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 80.0 in stage 12.0 (TID 98, localhost, partition 80,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 80.0 in stage 12.0 (TID 98)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 77.0 in stage 12.0 (TID 95) in 17 ms on localhost (77/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 80.0 in stage 12.0 (TID 98). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 81.0 in stage 12.0 (TID 99, localhost, partition 81,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 81.0 in stage 12.0 (TID 99)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 80.0 in stage 12.0 (TID 98) in 14 ms on localhost (78/200)
+16/11/07 16:29:47 INFO Executor: Finished task 78.0 in stage 12.0 (TID 96). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 82.0 in stage 12.0 (TID 100, localhost, partition 82,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 78.0 in stage 12.0 (TID 96) in 25 ms on localhost (79/200)
+16/11/07 16:29:47 INFO Executor: Running task 82.0 in stage 12.0 (TID 100)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 79.0 in stage 12.0 (TID 97). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 83.0 in stage 12.0 (TID 101, localhost, partition 83,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 83.0 in stage 12.0 (TID 101)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 79.0 in stage 12.0 (TID 97) in 25 ms on localhost (80/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 82.0 in stage 12.0 (TID 100). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 84.0 in stage 12.0 (TID 102, localhost, partition 84,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 82.0 in stage 12.0 (TID 100) in 16 ms on localhost (81/200)
+16/11/07 16:29:47 INFO Executor: Running task 84.0 in stage 12.0 (TID 102)
+16/11/07 16:29:47 INFO Executor: Finished task 83.0 in stage 12.0 (TID 101). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 85.0 in stage 12.0 (TID 103, localhost, partition 85,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 85.0 in stage 12.0 (TID 103)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 83.0 in stage 12.0 (TID 101) in 14 ms on localhost (82/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 85.0 in stage 12.0 (TID 103). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO Executor: Finished task 84.0 in stage 12.0 (TID 102). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 86.0 in stage 12.0 (TID 104, localhost, partition 86,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 87.0 in stage 12.0 (TID 105, localhost, partition 87,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 86.0 in stage 12.0 (TID 104)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 84.0 in stage 12.0 (TID 102) in 18 ms on localhost (83/200)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 85.0 in stage 12.0 (TID 103) in 13 ms on localhost (84/200)
+16/11/07 16:29:47 INFO Executor: Running task 87.0 in stage 12.0 (TID 105)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Finished task 81.0 in stage 12.0 (TID 99). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 88.0 in stage 12.0 (TID 106, localhost, partition 88,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 88.0 in stage 12.0 (TID 106)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 81.0 in stage 12.0 (TID 99) in 61 ms on localhost (85/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO Executor: Finished task 87.0 in stage 12.0 (TID 105). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 89.0 in stage 12.0 (TID 107, localhost, partition 89,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 89.0 in stage 12.0 (TID 107)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 87.0 in stage 12.0 (TID 105) in 40 ms on localhost (86/200)
+16/11/07 16:29:47 INFO Executor: Finished task 88.0 in stage 12.0 (TID 106). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 90.0 in stage 12.0 (TID 108, localhost, partition 90,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 88.0 in stage 12.0 (TID 106) in 23 ms on localhost (87/200)
+16/11/07 16:29:47 INFO Executor: Running task 90.0 in stage 12.0 (TID 108)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 89.0 in stage 12.0 (TID 107). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 91.0 in stage 12.0 (TID 109, localhost, partition 91,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 91.0 in stage 12.0 (TID 109)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 89.0 in stage 12.0 (TID 107) in 16 ms on localhost (88/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 76.0 in stage 12.0 (TID 94). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO Executor: Finished task 91.0 in stage 12.0 (TID 109). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 92.0 in stage 12.0 (TID 110, localhost, partition 92,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 93.0 in stage 12.0 (TID 111, localhost, partition 93,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 93.0 in stage 12.0 (TID 111)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 76.0 in stage 12.0 (TID 94) in 136 ms on localhost (89/200)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 91.0 in stage 12.0 (TID 109) in 20 ms on localhost (90/200)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Running task 92.0 in stage 12.0 (TID 110)
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:47 INFO Executor: Finished task 90.0 in stage 12.0 (TID 108). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 94.0 in stage 12.0 (TID 112, localhost, partition 94,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 90.0 in stage 12.0 (TID 108) in 46 ms on localhost (91/200)
+16/11/07 16:29:47 INFO Executor: Finished task 93.0 in stage 12.0 (TID 111). 2821 bytes result sent to driver
+16/11/07 16:29:47 INFO TaskSetManager: Starting task 95.0 in stage 12.0 (TID 113, localhost, partition 95,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:47 INFO Executor: Running task 95.0 in stage 12.0 (TID 113)
+16/11/07 16:29:47 INFO TaskSetManager: Finished task 93.0 in stage 12.0 (TID 111) in 20 ms on localhost (92/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 94.0 in stage 12.0 (TID 112)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 95.0 in stage 12.0 (TID 113). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 96.0 in stage 12.0 (TID 114, localhost, partition 96,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 96.0 in stage 12.0 (TID 114)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 95.0 in stage 12.0 (TID 113) in 17 ms on localhost (93/200)
+16/11/07 16:29:48 INFO Executor: Finished task 92.0 in stage 12.0 (TID 110). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 97.0 in stage 12.0 (TID 115, localhost, partition 97,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 92.0 in stage 12.0 (TID 110) in 41 ms on localhost (94/200)
+16/11/07 16:29:48 INFO Executor: Running task 97.0 in stage 12.0 (TID 115)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 96.0 in stage 12.0 (TID 114). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 98.0 in stage 12.0 (TID 116, localhost, partition 98,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 98.0 in stage 12.0 (TID 116)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 96.0 in stage 12.0 (TID 114) in 46 ms on localhost (95/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 97.0 in stage 12.0 (TID 115). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 99.0 in stage 12.0 (TID 117, localhost, partition 99,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO Executor: Running task 99.0 in stage 12.0 (TID 117)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 97.0 in stage 12.0 (TID 115) in 49 ms on localhost (96/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 94.0 in stage 12.0 (TID 112). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 100.0 in stage 12.0 (TID 118, localhost, partition 100,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 94.0 in stage 12.0 (TID 112) in 79 ms on localhost (97/200)
+16/11/07 16:29:48 INFO Executor: Running task 100.0 in stage 12.0 (TID 118)
+16/11/07 16:29:48 INFO Executor: Finished task 98.0 in stage 12.0 (TID 116). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 101.0 in stage 12.0 (TID 119, localhost, partition 101,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO Executor: Running task 101.0 in stage 12.0 (TID 119)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 98.0 in stage 12.0 (TID 116) in 16 ms on localhost (98/200)
+16/11/07 16:29:48 INFO Executor: Finished task 99.0 in stage 12.0 (TID 117). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 102.0 in stage 12.0 (TID 120, localhost, partition 102,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 102.0 in stage 12.0 (TID 120)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 99.0 in stage 12.0 (TID 117) in 16 ms on localhost (99/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 101.0 in stage 12.0 (TID 119). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 103.0 in stage 12.0 (TID 121, localhost, partition 103,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 103.0 in stage 12.0 (TID 121)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 101.0 in stage 12.0 (TID 119) in 11 ms on localhost (100/200)
+16/11/07 16:29:48 INFO Executor: Finished task 100.0 in stage 12.0 (TID 118). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 104.0 in stage 12.0 (TID 122, localhost, partition 104,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 104.0 in stage 12.0 (TID 122)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 100.0 in stage 12.0 (TID 118) in 17 ms on localhost (101/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 86.0 in stage 12.0 (TID 104). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 105.0 in stage 12.0 (TID 123, localhost, partition 105,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 86.0 in stage 12.0 (TID 104) in 185 ms on localhost (102/200)
+16/11/07 16:29:48 INFO Executor: Running task 105.0 in stage 12.0 (TID 123)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 103.0 in stage 12.0 (TID 121). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 106.0 in stage 12.0 (TID 124, localhost, partition 106,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 103.0 in stage 12.0 (TID 121) in 13 ms on localhost (103/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 102.0 in stage 12.0 (TID 120). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 107.0 in stage 12.0 (TID 125, localhost, partition 107,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 107.0 in stage 12.0 (TID 125)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 102.0 in stage 12.0 (TID 120) in 23 ms on localhost (104/200)
+16/11/07 16:29:48 INFO Executor: Finished task 105.0 in stage 12.0 (TID 123). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 108.0 in stage 12.0 (TID 126, localhost, partition 108,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 108.0 in stage 12.0 (TID 126)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 105.0 in stage 12.0 (TID 123) in 13 ms on localhost (105/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 107.0 in stage 12.0 (TID 125). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 109.0 in stage 12.0 (TID 127, localhost, partition 109,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 107.0 in stage 12.0 (TID 125) in 21 ms on localhost (106/200)
+16/11/07 16:29:48 INFO Executor: Finished task 108.0 in stage 12.0 (TID 126). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 110.0 in stage 12.0 (TID 128, localhost, partition 110,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 110.0 in stage 12.0 (TID 128)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 108.0 in stage 12.0 (TID 126) in 22 ms on localhost (107/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 104.0 in stage 12.0 (TID 122). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 111.0 in stage 12.0 (TID 129, localhost, partition 111,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 104.0 in stage 12.0 (TID 122) in 45 ms on localhost (108/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 110.0 in stage 12.0 (TID 128). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 112.0 in stage 12.0 (TID 130, localhost, partition 112,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 112.0 in stage 12.0 (TID 130)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 110.0 in stage 12.0 (TID 128) in 21 ms on localhost (109/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Running task 109.0 in stage 12.0 (TID 127)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 111.0 in stage 12.0 (TID 129)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 109.0 in stage 12.0 (TID 127). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 113.0 in stage 12.0 (TID 131, localhost, partition 113,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 113.0 in stage 12.0 (TID 131)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 109.0 in stage 12.0 (TID 127) in 56 ms on localhost (110/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 106.0 in stage 12.0 (TID 124)
+16/11/07 16:29:48 INFO Executor: Finished task 111.0 in stage 12.0 (TID 129). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 114.0 in stage 12.0 (TID 132, localhost, partition 114,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 111.0 in stage 12.0 (TID 129) in 55 ms on localhost (111/200)
+16/11/07 16:29:48 INFO Executor: Running task 114.0 in stage 12.0 (TID 132)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 113.0 in stage 12.0 (TID 131). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 115.0 in stage 12.0 (TID 133, localhost, partition 115,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 113.0 in stage 12.0 (TID 131) in 23 ms on localhost (112/200)
+16/11/07 16:29:48 INFO Executor: Running task 115.0 in stage 12.0 (TID 133)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 115.0 in stage 12.0 (TID 133). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 116.0 in stage 12.0 (TID 134, localhost, partition 116,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 116.0 in stage 12.0 (TID 134)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 115.0 in stage 12.0 (TID 133) in 18 ms on localhost (113/200)
+16/11/07 16:29:48 INFO Executor: Finished task 114.0 in stage 12.0 (TID 132). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 117.0 in stage 12.0 (TID 135, localhost, partition 117,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 117.0 in stage 12.0 (TID 135)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 114.0 in stage 12.0 (TID 132) in 34 ms on localhost (114/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 112.0 in stage 12.0 (TID 130). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 118.0 in stage 12.0 (TID 136, localhost, partition 118,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 112.0 in stage 12.0 (TID 130) in 81 ms on localhost (115/200)
+16/11/07 16:29:48 INFO Executor: Running task 118.0 in stage 12.0 (TID 136)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 106.0 in stage 12.0 (TID 124). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 119.0 in stage 12.0 (TID 137, localhost, partition 119,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 119.0 in stage 12.0 (TID 137)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 106.0 in stage 12.0 (TID 124) in 140 ms on localhost (116/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 17 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 118.0 in stage 12.0 (TID 136). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 120.0 in stage 12.0 (TID 138, localhost, partition 120,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 120.0 in stage 12.0 (TID 138)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 118.0 in stage 12.0 (TID 136) in 21 ms on localhost (117/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 117.0 in stage 12.0 (TID 135). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 121.0 in stage 12.0 (TID 139, localhost, partition 121,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 117.0 in stage 12.0 (TID 135) in 38 ms on localhost (118/200)
+16/11/07 16:29:48 INFO Executor: Running task 121.0 in stage 12.0 (TID 139)
+16/11/07 16:29:48 INFO Executor: Finished task 120.0 in stage 12.0 (TID 138). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 122.0 in stage 12.0 (TID 140, localhost, partition 122,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 122.0 in stage 12.0 (TID 140)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 120.0 in stage 12.0 (TID 138) in 16 ms on localhost (119/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 121.0 in stage 12.0 (TID 139). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 123.0 in stage 12.0 (TID 141, localhost, partition 123,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 121.0 in stage 12.0 (TID 139) in 20 ms on localhost (120/200)
+16/11/07 16:29:48 INFO Executor: Running task 123.0 in stage 12.0 (TID 141)
+16/11/07 16:29:48 INFO Executor: Finished task 122.0 in stage 12.0 (TID 140). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 124.0 in stage 12.0 (TID 142, localhost, partition 124,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 124.0 in stage 12.0 (TID 142)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 10 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 122.0 in stage 12.0 (TID 140) in 17 ms on localhost (121/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 119.0 in stage 12.0 (TID 137). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 125.0 in stage 12.0 (TID 143, localhost, partition 125,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 125.0 in stage 12.0 (TID 143)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 119.0 in stage 12.0 (TID 137) in 53 ms on localhost (122/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 116.0 in stage 12.0 (TID 134). 3249 bytes result sent to driver
+16/11/07 16:29:48 INFO Executor: Finished task 123.0 in stage 12.0 (TID 141). 3252 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 126.0 in stage 12.0 (TID 144, localhost, partition 126,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 127.0 in stage 12.0 (TID 145, localhost, partition 127,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 126.0 in stage 12.0 (TID 144)
+16/11/07 16:29:48 INFO Executor: Running task 127.0 in stage 12.0 (TID 145)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 123.0 in stage 12.0 (TID 141) in 22 ms on localhost (123/200)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 116.0 in stage 12.0 (TID 134) in 80 ms on localhost (124/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 125.0 in stage 12.0 (TID 143). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 128.0 in stage 12.0 (TID 146, localhost, partition 128,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 128.0 in stage 12.0 (TID 146)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 125.0 in stage 12.0 (TID 143) in 17 ms on localhost (125/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 128.0 in stage 12.0 (TID 146). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 129.0 in stage 12.0 (TID 147, localhost, partition 129,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 129.0 in stage 12.0 (TID 147)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 128.0 in stage 12.0 (TID 146) in 16 ms on localhost (126/200)
+16/11/07 16:29:48 INFO Executor: Finished task 126.0 in stage 12.0 (TID 144). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 130.0 in stage 12.0 (TID 148, localhost, partition 130,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 126.0 in stage 12.0 (TID 144) in 30 ms on localhost (127/200)
+16/11/07 16:29:48 INFO Executor: Running task 130.0 in stage 12.0 (TID 148)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 129.0 in stage 12.0 (TID 147). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 131.0 in stage 12.0 (TID 149, localhost, partition 131,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 129.0 in stage 12.0 (TID 147) in 17 ms on localhost (128/200)
+16/11/07 16:29:48 INFO Executor: Running task 131.0 in stage 12.0 (TID 149)
+16/11/07 16:29:48 INFO Executor: Finished task 130.0 in stage 12.0 (TID 148). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 132.0 in stage 12.0 (TID 150, localhost, partition 132,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 130.0 in stage 12.0 (TID 148) in 17 ms on localhost (129/200)
+16/11/07 16:29:48 INFO Executor: Running task 132.0 in stage 12.0 (TID 150)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 131.0 in stage 12.0 (TID 149). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 133.0 in stage 12.0 (TID 151, localhost, partition 133,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 131.0 in stage 12.0 (TID 149) in 19 ms on localhost (130/200)
+16/11/07 16:29:48 INFO Executor: Running task 133.0 in stage 12.0 (TID 151)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 133.0 in stage 12.0 (TID 151). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 134.0 in stage 12.0 (TID 152, localhost, partition 134,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 133.0 in stage 12.0 (TID 151) in 20 ms on localhost (131/200)
+16/11/07 16:29:48 INFO Executor: Running task 134.0 in stage 12.0 (TID 152)
+16/11/07 16:29:48 INFO Executor: Finished task 124.0 in stage 12.0 (TID 142). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 135.0 in stage 12.0 (TID 153, localhost, partition 135,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 124.0 in stage 12.0 (TID 142) in 98 ms on localhost (132/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 135.0 in stage 12.0 (TID 153)
+16/11/07 16:29:48 INFO Executor: Finished task 132.0 in stage 12.0 (TID 150). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 136.0 in stage 12.0 (TID 154, localhost, partition 136,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 132.0 in stage 12.0 (TID 150) in 50 ms on localhost (133/200)
+16/11/07 16:29:48 INFO Executor: Finished task 134.0 in stage 12.0 (TID 152). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 137.0 in stage 12.0 (TID 155, localhost, partition 137,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 134.0 in stage 12.0 (TID 152) in 27 ms on localhost (134/200)
+16/11/07 16:29:48 INFO Executor: Running task 137.0 in stage 12.0 (TID 155)
+16/11/07 16:29:48 INFO Executor: Finished task 127.0 in stage 12.0 (TID 145). 3253 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 138.0 in stage 12.0 (TID 156, localhost, partition 138,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 138.0 in stage 12.0 (TID 156)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 127.0 in stage 12.0 (TID 145) in 106 ms on localhost (135/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 136.0 in stage 12.0 (TID 154)
+16/11/07 16:29:48 INFO Executor: Finished task 138.0 in stage 12.0 (TID 156). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 139.0 in stage 12.0 (TID 157, localhost, partition 139,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 139.0 in stage 12.0 (TID 157)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 138.0 in stage 12.0 (TID 156) in 22 ms on localhost (136/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 11 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 135.0 in stage 12.0 (TID 153). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 140.0 in stage 12.0 (TID 158, localhost, partition 140,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Finished task 139.0 in stage 12.0 (TID 157). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO Executor: Finished task 136.0 in stage 12.0 (TID 154). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 141.0 in stage 12.0 (TID 159, localhost, partition 141,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 135.0 in stage 12.0 (TID 153) in 64 ms on localhost (137/200)
+16/11/07 16:29:48 INFO Executor: Running task 141.0 in stage 12.0 (TID 159)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 139.0 in stage 12.0 (TID 157) in 19 ms on localhost (138/200)
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 142.0 in stage 12.0 (TID 160, localhost, partition 142,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 140.0 in stage 12.0 (TID 158)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 136.0 in stage 12.0 (TID 154) in 51 ms on localhost (139/200)
+16/11/07 16:29:48 INFO Executor: Running task 142.0 in stage 12.0 (TID 160)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 141.0 in stage 12.0 (TID 159). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 143.0 in stage 12.0 (TID 161, localhost, partition 143,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 143.0 in stage 12.0 (TID 161)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 141.0 in stage 12.0 (TID 159) in 15 ms on localhost (140/200)
+16/11/07 16:29:48 INFO Executor: Finished task 142.0 in stage 12.0 (TID 160). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 144.0 in stage 12.0 (TID 162, localhost, partition 144,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 144.0 in stage 12.0 (TID 162)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 142.0 in stage 12.0 (TID 160) in 20 ms on localhost (141/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 144.0 in stage 12.0 (TID 162). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 145.0 in stage 12.0 (TID 163, localhost, partition 145,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 145.0 in stage 12.0 (TID 163)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 144.0 in stage 12.0 (TID 162) in 17 ms on localhost (142/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 143.0 in stage 12.0 (TID 161). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 146.0 in stage 12.0 (TID 164, localhost, partition 146,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 143.0 in stage 12.0 (TID 161) in 26 ms on localhost (143/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 137.0 in stage 12.0 (TID 155). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 147.0 in stage 12.0 (TID 165, localhost, partition 147,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Finished task 140.0 in stage 12.0 (TID 158). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 148.0 in stage 12.0 (TID 166, localhost, partition 148,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 137.0 in stage 12.0 (TID 155) in 87 ms on localhost (144/200)
+16/11/07 16:29:48 INFO Executor: Running task 148.0 in stage 12.0 (TID 166)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 140.0 in stage 12.0 (TID 158) in 46 ms on localhost (145/200)
+16/11/07 16:29:48 INFO Executor: Finished task 145.0 in stage 12.0 (TID 163). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 149.0 in stage 12.0 (TID 167, localhost, partition 149,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 145.0 in stage 12.0 (TID 163) in 13 ms on localhost (146/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 146.0 in stage 12.0 (TID 164)
+16/11/07 16:29:48 INFO Executor: Running task 147.0 in stage 12.0 (TID 165)
+16/11/07 16:29:48 INFO Executor: Running task 149.0 in stage 12.0 (TID 167)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+16/11/07 16:29:48 INFO Executor: Finished task 148.0 in stage 12.0 (TID 166). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 150.0 in stage 12.0 (TID 168, localhost, partition 150,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 148.0 in stage 12.0 (TID 166) in 13 ms on localhost (147/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 146.0 in stage 12.0 (TID 164). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 151.0 in stage 12.0 (TID 169, localhost, partition 151,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 151.0 in stage 12.0 (TID 169)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 146.0 in stage 12.0 (TID 164) in 19 ms on localhost (148/200)
+16/11/07 16:29:48 INFO Executor: Finished task 147.0 in stage 12.0 (TID 165). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 152.0 in stage 12.0 (TID 170, localhost, partition 152,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 152.0 in stage 12.0 (TID 170)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 147.0 in stage 12.0 (TID 165) in 18 ms on localhost (149/200)
+16/11/07 16:29:48 INFO Executor: Finished task 149.0 in stage 12.0 (TID 167). 3252 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 153.0 in stage 12.0 (TID 171, localhost, partition 153,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 153.0 in stage 12.0 (TID 171)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 149.0 in stage 12.0 (TID 167) in 16 ms on localhost (150/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 150.0 in stage 12.0 (TID 168)
+16/11/07 16:29:48 INFO Executor: Finished task 151.0 in stage 12.0 (TID 169). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 154.0 in stage 12.0 (TID 172, localhost, partition 154,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 154.0 in stage 12.0 (TID 172)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 151.0 in stage 12.0 (TID 169) in 11 ms on localhost (151/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 153.0 in stage 12.0 (TID 171). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 155.0 in stage 12.0 (TID 173, localhost, partition 155,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 153.0 in stage 12.0 (TID 171) in 12 ms on localhost (152/200)
+16/11/07 16:29:48 INFO Executor: Running task 155.0 in stage 12.0 (TID 173)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 150.0 in stage 12.0 (TID 168). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO Executor: Finished task 154.0 in stage 12.0 (TID 172). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 156.0 in stage 12.0 (TID 174, localhost, partition 156,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 157.0 in stage 12.0 (TID 175, localhost, partition 157,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 156.0 in stage 12.0 (TID 174)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 150.0 in stage 12.0 (TID 168) in 23 ms on localhost (153/200)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 154.0 in stage 12.0 (TID 172) in 11 ms on localhost (154/200)
+16/11/07 16:29:48 INFO Executor: Running task 157.0 in stage 12.0 (TID 175)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 156.0 in stage 12.0 (TID 174). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 158.0 in stage 12.0 (TID 176, localhost, partition 158,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 158.0 in stage 12.0 (TID 176)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 156.0 in stage 12.0 (TID 174) in 10 ms on localhost (155/200)
+16/11/07 16:29:48 INFO Executor: Finished task 157.0 in stage 12.0 (TID 175). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 159.0 in stage 12.0 (TID 177, localhost, partition 159,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 159.0 in stage 12.0 (TID 177)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 157.0 in stage 12.0 (TID 175) in 14 ms on localhost (156/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 159.0 in stage 12.0 (TID 177). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 160.0 in stage 12.0 (TID 178, localhost, partition 160,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 159.0 in stage 12.0 (TID 177) in 11 ms on localhost (157/200)
+16/11/07 16:29:48 INFO Executor: Running task 160.0 in stage 12.0 (TID 178)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 160.0 in stage 12.0 (TID 178). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 161.0 in stage 12.0 (TID 179, localhost, partition 161,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Finished task 152.0 in stage 12.0 (TID 170). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 160.0 in stage 12.0 (TID 178) in 13 ms on localhost (158/200)
+16/11/07 16:29:48 INFO Executor: Running task 161.0 in stage 12.0 (TID 179)
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 162.0 in stage 12.0 (TID 180, localhost, partition 162,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 162.0 in stage 12.0 (TID 180)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 152.0 in stage 12.0 (TID 170) in 56 ms on localhost (159/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 162.0 in stage 12.0 (TID 180). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 163.0 in stage 12.0 (TID 181, localhost, partition 163,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 163.0 in stage 12.0 (TID 181)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 162.0 in stage 12.0 (TID 180) in 16 ms on localhost (160/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 155.0 in stage 12.0 (TID 173). 3256 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 163.0 in stage 12.0 (TID 181). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 164.0 in stage 12.0 (TID 182, localhost, partition 164,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 164.0 in stage 12.0 (TID 182)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 155.0 in stage 12.0 (TID 173) in 71 ms on localhost (161/200)
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 165.0 in stage 12.0 (TID 183, localhost, partition 165,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 165.0 in stage 12.0 (TID 183)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 163.0 in stage 12.0 (TID 181) in 24 ms on localhost (162/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 164.0 in stage 12.0 (TID 182). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 166.0 in stage 12.0 (TID 184, localhost, partition 166,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 166.0 in stage 12.0 (TID 184)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 164.0 in stage 12.0 (TID 182) in 24 ms on localhost (163/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 158.0 in stage 12.0 (TID 176). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 167.0 in stage 12.0 (TID 185, localhost, partition 167,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 158.0 in stage 12.0 (TID 176) in 108 ms on localhost (164/200)
+16/11/07 16:29:48 INFO Executor: Running task 167.0 in stage 12.0 (TID 185)
+16/11/07 16:29:48 INFO Executor: Finished task 166.0 in stage 12.0 (TID 184). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 168.0 in stage 12.0 (TID 186, localhost, partition 168,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 166.0 in stage 12.0 (TID 184) in 37 ms on localhost (165/200)
+16/11/07 16:29:48 INFO Executor: Running task 168.0 in stage 12.0 (TID 186)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 165.0 in stage 12.0 (TID 183). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 169.0 in stage 12.0 (TID 187, localhost, partition 169,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 165.0 in stage 12.0 (TID 183) in 57 ms on localhost (166/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+16/11/07 16:29:48 INFO Executor: Running task 169.0 in stage 12.0 (TID 187)
+16/11/07 16:29:48 INFO Executor: Finished task 167.0 in stage 12.0 (TID 185). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 170.0 in stage 12.0 (TID 188, localhost, partition 170,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 170.0 in stage 12.0 (TID 188)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 167.0 in stage 12.0 (TID 185) in 17 ms on localhost (167/200)
+16/11/07 16:29:48 INFO Executor: Finished task 168.0 in stage 12.0 (TID 186). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 171.0 in stage 12.0 (TID 189, localhost, partition 171,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 171.0 in stage 12.0 (TID 189)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 168.0 in stage 12.0 (TID 186) in 18 ms on localhost (168/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 161.0 in stage 12.0 (TID 179). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO Executor: Finished task 170.0 in stage 12.0 (TID 188). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 172.0 in stage 12.0 (TID 190, localhost, partition 172,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 172.0 in stage 12.0 (TID 190)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 161.0 in stage 12.0 (TID 179) in 115 ms on localhost (169/200)
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 173.0 in stage 12.0 (TID 191, localhost, partition 173,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 173.0 in stage 12.0 (TID 191)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 170.0 in stage 12.0 (TID 188) in 19 ms on localhost (170/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 172.0 in stage 12.0 (TID 190). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 174.0 in stage 12.0 (TID 192, localhost, partition 174,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 174.0 in stage 12.0 (TID 192)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 172.0 in stage 12.0 (TID 190) in 15 ms on localhost (171/200)
+16/11/07 16:29:48 INFO Executor: Finished task 173.0 in stage 12.0 (TID 191). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 175.0 in stage 12.0 (TID 193, localhost, partition 175,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 173.0 in stage 12.0 (TID 191) in 15 ms on localhost (172/200)
+16/11/07 16:29:48 INFO Executor: Running task 175.0 in stage 12.0 (TID 193)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 174.0 in stage 12.0 (TID 192). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 176.0 in stage 12.0 (TID 194, localhost, partition 176,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 176.0 in stage 12.0 (TID 194)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 174.0 in stage 12.0 (TID 192) in 13 ms on localhost (173/200)
+16/11/07 16:29:48 INFO Executor: Finished task 175.0 in stage 12.0 (TID 193). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 177.0 in stage 12.0 (TID 195, localhost, partition 177,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 177.0 in stage 12.0 (TID 195)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 175.0 in stage 12.0 (TID 193) in 14 ms on localhost (174/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 169.0 in stage 12.0 (TID 187). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 178.0 in stage 12.0 (TID 196, localhost, partition 178,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 169.0 in stage 12.0 (TID 187) in 55 ms on localhost (175/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 178.0 in stage 12.0 (TID 196)
+16/11/07 16:29:48 INFO Executor: Finished task 177.0 in stage 12.0 (TID 195). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 179.0 in stage 12.0 (TID 197, localhost, partition 179,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 177.0 in stage 12.0 (TID 195) in 10 ms on localhost (176/200)
+16/11/07 16:29:48 INFO Executor: Running task 179.0 in stage 12.0 (TID 197)
+16/11/07 16:29:48 INFO Executor: Finished task 171.0 in stage 12.0 (TID 189). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 180.0 in stage 12.0 (TID 198, localhost, partition 180,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 171.0 in stage 12.0 (TID 189) in 56 ms on localhost (177/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Running task 180.0 in stage 12.0 (TID 198)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 176.0 in stage 12.0 (TID 194). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 181.0 in stage 12.0 (TID 199, localhost, partition 181,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 176.0 in stage 12.0 (TID 194) in 35 ms on localhost (178/200)
+16/11/07 16:29:48 INFO Executor: Running task 181.0 in stage 12.0 (TID 199)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO Executor: Finished task 178.0 in stage 12.0 (TID 196). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 182.0 in stage 12.0 (TID 200, localhost, partition 182,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+16/11/07 16:29:48 INFO Executor: Running task 182.0 in stage 12.0 (TID 200)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 178.0 in stage 12.0 (TID 196) in 36 ms on localhost (179/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 181.0 in stage 12.0 (TID 199). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 183.0 in stage 12.0 (TID 201, localhost, partition 183,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Finished task 182.0 in stage 12.0 (TID 200). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 181.0 in stage 12.0 (TID 199) in 26 ms on localhost (180/200)
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 184.0 in stage 12.0 (TID 202, localhost, partition 184,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 184.0 in stage 12.0 (TID 202)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 182.0 in stage 12.0 (TID 200) in 19 ms on localhost (181/200)
+16/11/07 16:29:48 INFO Executor: Running task 183.0 in stage 12.0 (TID 201)
+16/11/07 16:29:48 INFO Executor: Finished task 180.0 in stage 12.0 (TID 198). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 185.0 in stage 12.0 (TID 203, localhost, partition 185,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 180.0 in stage 12.0 (TID 198) in 48 ms on localhost (182/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 184.0 in stage 12.0 (TID 202). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 186.0 in stage 12.0 (TID 204, localhost, partition 186,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 186.0 in stage 12.0 (TID 204)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 184.0 in stage 12.0 (TID 202) in 19 ms on localhost (183/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 183.0 in stage 12.0 (TID 201). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO Executor: Finished task 186.0 in stage 12.0 (TID 204). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 187.0 in stage 12.0 (TID 205, localhost, partition 187,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 188.0 in stage 12.0 (TID 206, localhost, partition 188,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 183.0 in stage 12.0 (TID 201) in 35 ms on localhost (184/200)
+16/11/07 16:29:48 INFO Executor: Running task 188.0 in stage 12.0 (TID 206)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 186.0 in stage 12.0 (TID 204) in 16 ms on localhost (185/200)
+16/11/07 16:29:48 INFO Executor: Running task 187.0 in stage 12.0 (TID 205)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 188.0 in stage 12.0 (TID 206). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 189.0 in stage 12.0 (TID 207, localhost, partition 189,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 189.0 in stage 12.0 (TID 207)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 188.0 in stage 12.0 (TID 206) in 20 ms on localhost (186/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 187.0 in stage 12.0 (TID 205). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 190.0 in stage 12.0 (TID 208, localhost, partition 190,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 187.0 in stage 12.0 (TID 205) in 31 ms on localhost (187/200)
+16/11/07 16:29:48 INFO Executor: Running task 190.0 in stage 12.0 (TID 208)
+16/11/07 16:29:48 INFO Executor: Finished task 189.0 in stage 12.0 (TID 207). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 191.0 in stage 12.0 (TID 209, localhost, partition 191,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 189.0 in stage 12.0 (TID 207) in 17 ms on localhost (188/200)
+16/11/07 16:29:48 INFO Executor: Running task 191.0 in stage 12.0 (TID 209)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Running task 185.0 in stage 12.0 (TID 203)
+16/11/07 16:29:48 INFO Executor: Finished task 190.0 in stage 12.0 (TID 208). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 192.0 in stage 12.0 (TID 210, localhost, partition 192,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 192.0 in stage 12.0 (TID 210)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 190.0 in stage 12.0 (TID 208) in 21 ms on localhost (189/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 185.0 in stage 12.0 (TID 203). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 193.0 in stage 12.0 (TID 211, localhost, partition 193,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 185.0 in stage 12.0 (TID 203) in 108 ms on localhost (190/200)
+16/11/07 16:29:48 INFO Executor: Running task 193.0 in stage 12.0 (TID 211)
+16/11/07 16:29:48 INFO Executor: Finished task 179.0 in stage 12.0 (TID 197). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 194.0 in stage 12.0 (TID 212, localhost, partition 194,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 179.0 in stage 12.0 (TID 197) in 167 ms on localhost (191/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Running task 194.0 in stage 12.0 (TID 212)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 194.0 in stage 12.0 (TID 212). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 195.0 in stage 12.0 (TID 213, localhost, partition 195,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Finished task 193.0 in stage 12.0 (TID 211). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO Executor: Running task 195.0 in stage 12.0 (TID 213)
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 196.0 in stage 12.0 (TID 214, localhost, partition 196,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 196.0 in stage 12.0 (TID 214)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 193.0 in stage 12.0 (TID 211) in 26 ms on localhost (192/200)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 194.0 in stage 12.0 (TID 212) in 20 ms on localhost (193/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 195.0 in stage 12.0 (TID 213). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 197.0 in stage 12.0 (TID 215, localhost, partition 197,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Finished task 196.0 in stage 12.0 (TID 214). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 195.0 in stage 12.0 (TID 213) in 11 ms on localhost (194/200)
+16/11/07 16:29:48 INFO Executor: Running task 197.0 in stage 12.0 (TID 215)
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 198.0 in stage 12.0 (TID 216, localhost, partition 198,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 196.0 in stage 12.0 (TID 214) in 12 ms on localhost (195/200)
+16/11/07 16:29:48 INFO Executor: Running task 198.0 in stage 12.0 (TID 216)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/07 16:29:48 INFO Executor: Finished task 198.0 in stage 12.0 (TID 216). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Starting task 199.0 in stage 12.0 (TID 217, localhost, partition 199,NODE_LOCAL, 2190 bytes)
+16/11/07 16:29:48 INFO Executor: Running task 199.0 in stage 12.0 (TID 217)
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 198.0 in stage 12.0 (TID 216) in 10 ms on localhost (196/200)
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO Executor: Finished task 191.0 in stage 12.0 (TID 209). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+16/11/07 16:29:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 191.0 in stage 12.0 (TID 209) in 95 ms on localhost (197/200)
+16/11/07 16:29:48 INFO Executor: Finished task 199.0 in stage 12.0 (TID 217). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 199.0 in stage 12.0 (TID 217) in 10 ms on localhost (198/200)
+16/11/07 16:29:48 INFO Executor: Finished task 192.0 in stage 12.0 (TID 210). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 192.0 in stage 12.0 (TID 210) in 85 ms on localhost (199/200)
+16/11/07 16:29:48 INFO Executor: Finished task 197.0 in stage 12.0 (TID 215). 2821 bytes result sent to driver
+16/11/07 16:29:48 INFO TaskSetManager: Finished task 197.0 in stage 12.0 (TID 215) in 25 ms on localhost (200/200)
+16/11/07 16:29:48 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool
+16/11/07 16:29:48 INFO DAGScheduler: ResultStage 12 (show at CrossDataDemo1.scala:84) finished in 2.672 s
+16/11/07 16:29:48 INFO DAGScheduler: Job 10 finished: show at CrossDataDemo1.scala:84, took 5.111240 s
++---------+--------+-----+---------+----------------+---------+------------+
+|center   |products|total|name     |address         |employees|opening_year|
++---------+--------+-----+---------+----------------+---------+------------+
+|Bilbao   |25      |2500 |Bilbao   |C/ Perez Galdos |27       |2008        |
+|Sevilla  |28      |3200 |Sevilla  |C/ Sierpes      |25       |2004        |
+|Valencia |23      |3300 |Valencia |C/ Mestalla     |33       |2001        |
+|Barcelona|47      |6400 |Barcelona|Avd. Diagonal   |25       |2004        |
+|Madrid   |51      |7700 |Madrid   |Avd. de Betanzos|39       |2001        |
++---------+--------+-----+---------+----------------+---------+------------+
+
+16/11/07 16:29:53 INFO CassandraConnector: Disconnected from Cassandra cluster: Test Cluster
+16/11/07 16:29:54 INFO SparkContext: Invoking stop() from shutdown hook
+16/11/07 16:29:54 INFO SerialShutdownHooks: Successfully executed shutdown hook: Clearing session cache for C* connector
+16/11/07 16:29:54 INFO SparkUI: Stopped Spark web UI at http://10.57.2.26:4040
+16/11/07 16:29:54 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+16/11/07 16:29:54 INFO MemoryStore: MemoryStore cleared
+16/11/07 16:29:54 INFO BlockManager: BlockManager stopped
+16/11/07 16:29:54 INFO BlockManagerMaster: BlockManagerMaster stopped
+16/11/07 16:29:54 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+16/11/07 16:29:54 INFO SparkContext: Successfully stopped SparkContext
+16/11/07 16:29:54 INFO ShutdownHookManager: Shutdown hook called
+16/11/07 16:29:54 INFO ShutdownHookManager: Deleting directory /private/var/folders/xc/x0b8crk9667ddh1zhfs29_zr0000gn/T/spark-b544a332-d4b9-494d-879e-862768a44a03
+
+Process finished with exit code 0
