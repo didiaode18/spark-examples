@@ -11,7 +11,7 @@
     <properties>
         <scala.version>2.10.4</scala.version>
         <scala.bin.version>2.10</scala.bin.version>
-        <spark.version>1.4.1</spark.version>
+        <spark.version>1.6.2</spark.version>
         <cassandra.version>2.1.0</cassandra.version>
         <akka.version>2.3.12</akka.version>
 
@@ -59,11 +59,13 @@
             <artifactId>spark-mllib_${scala.bin.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
+        <!--
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-bagel_${scala.bin.version}</artifactId>
             <version>${spark.version}</version>
         </dependency>
+        -->
 
         <!--ES-Hadoop-->
         <dependency>
