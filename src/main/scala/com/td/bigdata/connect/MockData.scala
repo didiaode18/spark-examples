@@ -47,5 +47,6 @@ object MockData {
     results.show()
   }
 
+  case class Person2(id: Int, ts: Long, name: String)
 
 }
