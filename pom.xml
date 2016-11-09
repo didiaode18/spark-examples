@@ -13,8 +13,10 @@
         <scala.bin.version>2.10</scala.bin.version>
         <spark.version>1.6.2</spark.version>
         <cassandra.version>2.1.0</cassandra.version>
+        <spark-cassandra-connector.version>1.6.2</spark-cassandra-connector.version>
         <akka.version>2.3.12</akka.version>
-
+        <elasticsearch.version>2.4.0</elasticsearch.version>
+        <mongodb.version>0.11.2</mongodb.version>
     </properties>
 
     <dependencies>
@@ -71,14 +73,16 @@
         <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch-hadoop</artifactId>
-            <version>2.1.1</version>
+            <version>2.4.0</version>
         </dependency>
 
+        <!--
         <dependency>
             <groupId>org.apache.cassandra</groupId>
             <artifactId>cassandra-all</artifactId>
             <version>${cassandra.version}</version>
         </dependency>
+        -->
         <dependency>
             <groupId>com.datastax.spark</groupId>
             <artifactId>spark-cassandra-connector_2.10</artifactId>
@@ -94,6 +98,11 @@
             <groupId>it.nerdammer.bigdata</groupId>
             <artifactId>spark-hbase-connector_2.10</artifactId>
             <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.stratio.datasource</groupId>
+            <artifactId>spark-mongodb_${scala.bin.version}</artifactId>
+            <version>${mongodb.version}</version>
         </dependency>
 
         <!--Kafka-Spark-Redis-->
@@ -187,30 +196,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <!--
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                    <archive>
-                        <manifest>
-                            <mainClass></mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>make-assembly</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            -->
         </plugins>
     </build>
 </project>
