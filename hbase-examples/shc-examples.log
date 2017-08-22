@@ -1,0 +1,862 @@
+Warning: Master yarn-client is deprecated since 2.0. Please use master "yarn" with specified deploy mode instead.
+17/08/22 10:57:39 INFO SparkContext: Running Spark version 2.1.1
+17/08/22 10:57:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/08/22 10:57:39 INFO SecurityManager: Changing view acls to: admin
+17/08/22 10:57:39 INFO SecurityManager: Changing modify acls to: admin
+17/08/22 10:57:39 INFO SecurityManager: Changing view acls groups to:
+17/08/22 10:57:39 INFO SecurityManager: Changing modify acls groups to:
+17/08/22 10:57:39 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(admin); groups with view permissions: Set(); users  with modify permissions: Set(admin); groups with modify permissions: Set()
+17/08/22 10:57:40 INFO Utils: Successfully started service 'sparkDriver' on port 14854.
+17/08/22 10:57:40 INFO SparkEnv: Registering MapOutputTracker
+17/08/22 10:57:40 INFO SparkEnv: Registering BlockManagerMaster
+17/08/22 10:57:40 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/08/22 10:57:40 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/08/22 10:57:40 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e25624f9-cf92-4fcd-8759-09f11991288e
+17/08/22 10:57:40 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+17/08/22 10:57:40 INFO SparkEnv: Registering OutputCommitCoordinator
+17/08/22 10:57:40 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+17/08/22 10:57:40 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://10.57.17.175:4040
+17/08/22 10:57:40 INFO SparkContext: Added JAR file:/home/admin/hbase2-examples-1.0-SNAPSHOT-jar-with-dependencies.jar at spark://10.57.17.175:14854/jars/hbase2-examples-1.0-SNAPSHOT-jar-with-dependencies.jar with timestamp 1503370660942
+17/08/22 10:57:42 INFO Client: Requesting a new application from cluster with 2 NodeManagers
+17/08/22 10:57:42 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (8192 MB per container)
+17/08/22 10:57:42 INFO Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+17/08/22 10:57:42 INFO Client: Setting up container launch context for our AM
+17/08/22 10:57:42 INFO Client: Setting up the launch environment for our AM container
+17/08/22 10:57:42 INFO Client: Preparing resources for our AM container
+17/08/22 10:57:44 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+17/08/22 10:57:46 INFO Client: Uploading resource file:/tmp/spark-77ce6f3e-8da4-4983-b59a-b7199edd061d/__spark_libs__1950578298719300094.zip -> hdfs://masters/user/admin/.sparkStaging/application_1498125999830_0142/__spark_libs__1950578298719300094.zip
+17/08/22 10:57:53 INFO Client: Uploading resource file:/usr/install/hbase1.2/conf/hbase-site.xml -> hdfs://masters/user/admin/.sparkStaging/application_1498125999830_0142/hbase-site.xml
+17/08/22 10:57:54 INFO Client: Uploading resource file:/tmp/spark-77ce6f3e-8da4-4983-b59a-b7199edd061d/__spark_conf__3440752557954383801.zip -> hdfs://masters/user/admin/.sparkStaging/application_1498125999830_0142/__spark_conf__.zip
+17/08/22 10:57:54 INFO SecurityManager: Changing view acls to: admin
+17/08/22 10:57:54 INFO SecurityManager: Changing modify acls to: admin
+17/08/22 10:57:54 INFO SecurityManager: Changing view acls groups to:
+17/08/22 10:57:54 INFO SecurityManager: Changing modify acls groups to:
+17/08/22 10:57:54 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(admin); groups with view permissions: Set(); users  with modify permissions: Set(admin); groups with modify permissions: Set()
+17/08/22 10:57:54 INFO Client: Submitting application application_1498125999830_0142 to ResourceManager
+17/08/22 10:57:54 INFO YarnClientImpl: Submitted application application_1498125999830_0142
+17/08/22 10:57:54 INFO SchedulerExtensionServices: Starting Yarn extension services with app application_1498125999830_0142 and attemptId None
+17/08/22 10:57:55 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:57:55 INFO Client:
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: root.admin
+	 start time: 1503370674579
+	 final status: UNDEFINED
+	 tracking URL: http://h1:8188/proxy/application_1498125999830_0142/
+	 user: admin
+17/08/22 10:57:56 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:57:57 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:57:58 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:57:59 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:00 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:01 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:02 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:03 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:04 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:05 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:06 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:07 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:08 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:09 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:10 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:11 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:12 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:13 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:14 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:15 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:16 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:17 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:18 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:19 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:20 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:21 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:22 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:23 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:24 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:25 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:26 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:27 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(null)
+17/08/22 10:58:27 INFO YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> h1,h2, PROXY_URI_BASES -> http://h1:8088/proxy/application_1498125999830_0142,http://h2:8088/proxy/application_1498125999830_0142), /proxy/application_1498125999830_0142
+17/08/22 10:58:27 INFO JettyUtils: Adding filter: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+17/08/22 10:58:27 INFO Client: Application report for application_1498125999830_0142 (state: ACCEPTED)
+17/08/22 10:58:28 INFO Client: Application report for application_1498125999830_0142 (state: RUNNING)
+17/08/22 10:58:28 INFO Client:
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.57.17.179
+	 ApplicationMaster RPC port: 0
+	 queue: root.admin
+	 start time: 1503370674579
+	 final status: UNDEFINED
+	 tracking URL: http://h1:8188/proxy/application_1498125999830_0142/
+	 user: admin
+17/08/22 10:58:28 INFO YarnClientSchedulerBackend: Application application_1498125999830_0142 has started running.
+17/08/22 10:58:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 58930.
+17/08/22 10:58:28 INFO NettyBlockTransferService: Server created on 10.57.17.175:58930
+17/08/22 10:58:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/08/22 10:58:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.57.17.175, 58930, None)
+17/08/22 10:58:28 INFO BlockManagerMasterEndpoint: Registering block manager 10.57.17.175:58930 with 366.3 MB RAM, BlockManagerId(driver, 10.57.17.175, 58930, None)
+17/08/22 10:58:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.57.17.175, 58930, None)
+17/08/22 10:58:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.57.17.175, 58930, None)
+17/08/22 10:58:29 INFO YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after waiting maxRegisteredResourcesWaitingTime: 30000(ms)
+17/08/22 10:58:29 INFO SharedState: Warehouse path is 'file:/home/admin/spark-warehouse/'.
+17/08/22 10:58:31 INFO CatalystSqlParser: Parsing command: string
+17/08/22 10:58:31 INFO CatalystSqlParser: Parsing command: boolean
+17/08/22 10:58:31 INFO CatalystSqlParser: Parsing command: double
+17/08/22 10:58:31 INFO CatalystSqlParser: Parsing command: float
+17/08/22 10:58:31 INFO CatalystSqlParser: Parsing command: int
+17/08/22 10:58:31 INFO CatalystSqlParser: Parsing command: bigint
+17/08/22 10:58:31 INFO CatalystSqlParser: Parsing command: smallint
+17/08/22 10:58:31 INFO CatalystSqlParser: Parsing command: string
+17/08/22 10:58:31 INFO CatalystSqlParser: Parsing command: tinyint
+17/08/22 10:58:31 INFO SHCCredentialsManager: SHCCredentialsManager was not enabled.
+17/08/22 10:58:31 INFO RecoverableZooKeeper: Process identifier=hconnection-0x49f2646 connecting to ZooKeeper ensemble=localhost:2181
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:host.name=h1
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:java.version=1.8.0_60
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:java.vendor=Oracle Corporation
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:java.home=/usr/install/jdk1.8.0_60/jre
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:java.io.tmpdir=/tmp
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:java.compiler=<NA>
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:os.name=Linux
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:os.arch=amd64
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:os.version=3.10.0-327.el7.x86_64
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:user.name=admin
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:user.home=/home/admin
+17/08/22 10:58:31 INFO ZooKeeper: Client environment:user.dir=/home/admin
+17/08/22 10:58:31 INFO ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=90000 watcher=hconnection-0x49f26460x0, quorum=localhost:2181, baseZNode=/hbase
+17/08/22 10:58:31 INFO ClientCnxn: Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+17/08/22 10:58:31 INFO ClientCnxn: Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+17/08/22 10:58:31 INFO ClientCnxn: Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x15cd403bc3f031d, negotiated timeout = 40000
+17/08/22 10:58:35 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(null) (10.57.17.179:55467) with ID 2
+17/08/22 10:58:35 INFO BlockManagerMasterEndpoint: Registering block manager h3:19533 with 366.3 MB RAM, BlockManagerId(2, h3, 19533, None)
+17/08/22 10:58:41 INFO HBaseAdmin: Created shcExampleTable
+17/08/22 10:58:42 INFO CodeGenerator: Code generated in 673.420327 ms
+17/08/22 10:58:42 INFO SparkContext: Starting job: save at HBaseSource.scala:107
+17/08/22 10:58:42 INFO DAGScheduler: Got job 0 (save at HBaseSource.scala:107) with 2 output partitions
+17/08/22 10:58:42 INFO DAGScheduler: Final stage: ResultStage 0 (save at HBaseSource.scala:107)
+17/08/22 10:58:42 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:58:42 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:58:42 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[5] at save at HBaseSource.scala:107), which has no missing parents
+17/08/22 10:58:43 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 189.2 KB, free 366.1 MB)
+17/08/22 10:58:43 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 69.0 KB, free 366.0 MB)
+17/08/22 10:58:43 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.57.17.175:58930 (size: 69.0 KB, free: 366.2 MB)
+17/08/22 10:58:43 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:996
+17/08/22 10:58:43 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[5] at save at HBaseSource.scala:107)
+17/08/22 10:58:43 INFO YarnScheduler: Adding task set 0.0 with 2 tasks
+17/08/22 10:58:43 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, h3, executor 2, partition 0, PROCESS_LOCAL, 11709 bytes)
+17/08/22 10:58:43 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(null) (10.57.17.177:25928) with ID 1
+17/08/22 10:58:43 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, h2, executor 1, partition 1, PROCESS_LOCAL, 11947 bytes)
+17/08/22 10:58:43 INFO BlockManagerMasterEndpoint: Registering block manager h2:36398 with 366.3 MB RAM, BlockManagerId(1, h2, 36398, None)
+17/08/22 10:58:50 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on h2:36398 (size: 69.0 KB, free: 366.2 MB)
+17/08/22 10:58:50 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on h3:19533 (size: 69.0 KB, free: 366.2 MB)
+17/08/22 10:58:53 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 10621 ms on h3 (executor 2) (1/2)
+17/08/22 10:58:54 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 10549 ms on h2 (executor 1) (2/2)
+17/08/22 10:58:54 INFO DAGScheduler: ResultStage 0 (save at HBaseSource.scala:107) finished in 10.770 s
+17/08/22 10:58:54 INFO YarnScheduler: Removed TaskSet 0.0, whose tasks have all completed, from pool
+17/08/22 10:58:54 INFO DAGScheduler: Job 0 finished: save at HBaseSource.scala:107, took 11.182166 s
+17/08/22 10:58:54 INFO CatalystSqlParser: Parsing command: string
+17/08/22 10:58:54 INFO CatalystSqlParser: Parsing command: boolean
+17/08/22 10:58:54 INFO CatalystSqlParser: Parsing command: double
+17/08/22 10:58:54 INFO CatalystSqlParser: Parsing command: float
+17/08/22 10:58:54 INFO CatalystSqlParser: Parsing command: int
+17/08/22 10:58:54 INFO CatalystSqlParser: Parsing command: bigint
+17/08/22 10:58:54 INFO CatalystSqlParser: Parsing command: smallint
+17/08/22 10:58:54 INFO CatalystSqlParser: Parsing command: string
+17/08/22 10:58:54 INFO CatalystSqlParser: Parsing command: tinyint
+17/08/22 10:58:58 INFO HBaseAdmin: Created shcExampleTable1
+17/08/22 10:58:58 INFO SparkContext: Starting job: save at HBaseSource.scala:113
+17/08/22 10:58:58 INFO DAGScheduler: Got job 1 (save at HBaseSource.scala:113) with 2 output partitions
+17/08/22 10:58:58 INFO DAGScheduler: Final stage: ResultStage 1 (save at HBaseSource.scala:113)
+17/08/22 10:58:58 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:58:58 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:58:58 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[11] at save at HBaseSource.scala:113), which has no missing parents
+17/08/22 10:58:58 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 189.2 KB, free 365.9 MB)
+17/08/22 10:58:58 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 68.9 KB, free 365.8 MB)
+17/08/22 10:58:58 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.57.17.175:58930 (size: 68.9 KB, free: 366.2 MB)
+17/08/22 10:58:58 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:996
+17/08/22 10:58:58 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[11] at save at HBaseSource.scala:113)
+17/08/22 10:58:58 INFO YarnScheduler: Adding task set 1.0 with 2 tasks
+17/08/22 10:58:58 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, h2, executor 1, partition 0, PROCESS_LOCAL, 11710 bytes)
+17/08/22 10:58:58 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, h3, executor 2, partition 1, PROCESS_LOCAL, 11948 bytes)
+17/08/22 10:58:59 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on h2:36398 (size: 68.9 KB, free: 366.2 MB)
+17/08/22 10:58:59 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on h3:19533 (size: 68.9 KB, free: 366.2 MB)
+17/08/22 10:58:59 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 737 ms on h3 (executor 2) (1/2)
+17/08/22 10:58:59 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 850 ms on h2 (executor 1) (2/2)
+17/08/22 10:58:59 INFO YarnScheduler: Removed TaskSet 1.0, whose tasks have all completed, from pool
+17/08/22 10:58:59 INFO DAGScheduler: ResultStage 1 (save at HBaseSource.scala:113) finished in 0.853 s
+17/08/22 10:58:59 INFO DAGScheduler: Job 1 finished: save at HBaseSource.scala:113, took 0.942109 s
+17/08/22 10:58:59 INFO CatalystSqlParser: Parsing command: string
+17/08/22 10:58:59 INFO CatalystSqlParser: Parsing command: boolean
+17/08/22 10:58:59 INFO CatalystSqlParser: Parsing command: double
+17/08/22 10:58:59 INFO CatalystSqlParser: Parsing command: float
+17/08/22 10:58:59 INFO CatalystSqlParser: Parsing command: int
+17/08/22 10:58:59 INFO CatalystSqlParser: Parsing command: bigint
+17/08/22 10:58:59 INFO CatalystSqlParser: Parsing command: smallint
+17/08/22 10:58:59 INFO CatalystSqlParser: Parsing command: string
+17/08/22 10:58:59 INFO CatalystSqlParser: Parsing command: tinyint
+17/08/22 10:59:00 INFO CodeGenerator: Code generated in 57.917842 ms
+17/08/22 10:59:00 INFO SparkContext: Starting job: show at HBaseSource.scala:116
+17/08/22 10:59:00 INFO DAGScheduler: Got job 2 (show at HBaseSource.scala:116) with 1 output partitions
+17/08/22 10:59:00 INFO DAGScheduler: Final stage: ResultStage 2 (show at HBaseSource.scala:116)
+17/08/22 10:59:00 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:00 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:00 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[15] at show at HBaseSource.scala:116), which has no missing parents
+17/08/22 10:59:00 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 96.2 KB, free 365.7 MB)
+17/08/22 10:59:00 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 36.0 KB, free 365.7 MB)
+17/08/22 10:59:00 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.57.17.175:58930 (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:00 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:00 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[15] at show at HBaseSource.scala:116)
+17/08/22 10:59:00 INFO YarnScheduler: Adding task set 2.0 with 1 tasks
+17/08/22 10:59:00 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 4, h3, executor 2, partition 0, NODE_LOCAL, 7631 bytes)
+17/08/22 10:59:00 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on h3:19533 (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:00 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 4) in 617 ms on h3 (executor 2) (1/1)
+17/08/22 10:59:00 INFO YarnScheduler: Removed TaskSet 2.0, whose tasks have all completed, from pool
+17/08/22 10:59:00 INFO DAGScheduler: ResultStage 2 (show at HBaseSource.scala:116) finished in 0.620 s
+17/08/22 10:59:00 INFO DAGScheduler: Job 2 finished: show at HBaseSource.scala:116, took 0.690036 s
+17/08/22 10:59:00 INFO SparkContext: Starting job: show at HBaseSource.scala:116
+17/08/22 10:59:00 INFO DAGScheduler: Got job 3 (show at HBaseSource.scala:116) with 4 output partitions
+17/08/22 10:59:00 INFO DAGScheduler: Final stage: ResultStage 3 (show at HBaseSource.scala:116)
+17/08/22 10:59:00 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:00 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:00 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[15] at show at HBaseSource.scala:116), which has no missing parents
+17/08/22 10:59:00 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 96.2 KB, free 365.6 MB)
+17/08/22 10:59:00 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 36.0 KB, free 365.5 MB)
+17/08/22 10:59:00 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.57.17.175:58930 (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:00 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:00 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 3 (MapPartitionsRDD[15] at show at HBaseSource.scala:116)
+17/08/22 10:59:00 INFO YarnScheduler: Adding task set 3.0 with 4 tasks
+17/08/22 10:59:00 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 5, h3, executor 2, partition 2, NODE_LOCAL, 7638 bytes)
+17/08/22 10:59:00 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 6, h2, executor 1, partition 1, NODE_LOCAL, 7638 bytes)
+17/08/22 10:59:00 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on h3:19533 (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:01 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on h2:36398 (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:01 INFO TaskSetManager: Starting task 3.0 in stage 3.0 (TID 7, h3, executor 2, partition 4, NODE_LOCAL, 7617 bytes)
+17/08/22 10:59:01 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 5) in 180 ms on h3 (executor 2) (1/4)
+17/08/22 10:59:01 INFO TaskSetManager: Finished task 3.0 in stage 3.0 (TID 7) in 88 ms on h3 (executor 2) (2/4)
+17/08/22 10:59:01 INFO TaskSetManager: Starting task 2.0 in stage 3.0 (TID 8, h2, executor 1, partition 3, NODE_LOCAL, 7638 bytes)
+17/08/22 10:59:01 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 6) in 854 ms on h2 (executor 1) (3/4)
+17/08/22 10:59:01 INFO TaskSetManager: Finished task 2.0 in stage 3.0 (TID 8) in 205 ms on h2 (executor 1) (4/4)
+17/08/22 10:59:01 INFO YarnScheduler: Removed TaskSet 3.0, whose tasks have all completed, from pool
+17/08/22 10:59:01 INFO DAGScheduler: ResultStage 3 (show at HBaseSource.scala:116) finished in 1.059 s
+17/08/22 10:59:01 INFO DAGScheduler: Job 3 finished: show at HBaseSource.scala:116, took 1.106258 s
+17/08/22 10:59:02 INFO CodeGenerator: Code generated in 50.181906 ms
++------+-----+----+----+----+----+----+--------------+----+
+|  col0| col1|col2|col3|col4|col5|col6|          col7|col8|
++------+-----+----+----+----+----+----+--------------+----+
+|row000| true| 0.0| 0.0|   0|   0|   0| String0 extra|   0|
+|row001|false| 1.0| 1.0|   1|   1|   1| String1 extra|   1|
+|row002| true| 2.0| 2.0|   2|   2|   2| String2 extra|   2|
+|row003|false| 3.0| 3.0|   3|   3|   3| String3 extra|   3|
+|row004| true| 4.0| 4.0|   4|   4|   4| String4 extra|   4|
+|row005|false| 5.0| 5.0|   5|   5|   5| String5 extra|   5|
+|row006| true| 6.0| 6.0|   6|   6|   6| String6 extra|   6|
+|row007|false| 7.0| 7.0|   7|   7|   7| String7 extra|   7|
+|row008| true| 8.0| 8.0|   8|   8|   8| String8 extra|   8|
+|row009|false| 9.0| 9.0|   9|   9|   9| String9 extra|   9|
+|row010| true|10.0|10.0|  10|  10|  10|String10 extra|  10|
+|row011|false|11.0|11.0|  11|  11|  11|String11 extra|  11|
+|row012| true|12.0|12.0|  12|  12|  12|String12 extra|  12|
+|row013|false|13.0|13.0|  13|  13|  13|String13 extra|  13|
+|row014| true|14.0|14.0|  14|  14|  14|String14 extra|  14|
+|row015|false|15.0|15.0|  15|  15|  15|String15 extra|  15|
+|row016| true|16.0|16.0|  16|  16|  16|String16 extra|  16|
+|row017|false|17.0|17.0|  17|  17|  17|String17 extra|  17|
+|row018| true|18.0|18.0|  18|  18|  18|String18 extra|  18|
+|row019|false|19.0|19.0|  19|  19|  19|String19 extra|  19|
++------+-----+----+----+----+----+----+--------------+----+
+only showing top 20 rows
+
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 10.57.17.175:58930 in memory (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_3_piece0 on h3:19533 in memory (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_3_piece0 on h2:36398 in memory (size: 36.0 KB, free: 366.2 MB)
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.57.17.175:58930 in memory (size: 68.9 KB, free: 366.2 MB)
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_1_piece0 on h3:19533 in memory (size: 68.9 KB, free: 366.2 MB)
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_1_piece0 on h2:36398 in memory (size: 68.9 KB, free: 366.2 MB)
+17/08/22 10:59:02 INFO ContextCleaner: Cleaned accumulator 1
+17/08/22 10:59:02 INFO ContextCleaner: Cleaned accumulator 74
+17/08/22 10:59:02 INFO ContextCleaner: Cleaned accumulator 0
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 10.57.17.175:58930 in memory (size: 36.0 KB, free: 366.2 MB)
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_2_piece0 on h3:19533 in memory (size: 36.0 KB, free: 366.2 MB)
+17/08/22 10:59:02 INFO ContextCleaner: Cleaned accumulator 75
+17/08/22 10:59:02 INFO ContextCleaner: Cleaned accumulator 148
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 10.57.17.175:58930 in memory (size: 69.0 KB, free: 366.3 MB)
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_0_piece0 on h3:19533 in memory (size: 69.0 KB, free: 366.3 MB)
+17/08/22 10:59:02 INFO BlockManagerInfo: Removed broadcast_0_piece0 on h2:36398 in memory (size: 69.0 KB, free: 366.3 MB)
+17/08/22 10:59:02 INFO ContextCleaner: Cleaned accumulator 149
+17/08/22 10:59:02 INFO CodeGenerator: Code generated in 31.05576 ms
+17/08/22 10:59:02 INFO SparkContext: Starting job: show at HBaseSource.scala:118
+17/08/22 10:59:02 INFO DAGScheduler: Got job 4 (show at HBaseSource.scala:118) with 1 output partitions
+17/08/22 10:59:02 INFO DAGScheduler: Final stage: ResultStage 4 (show at HBaseSource.scala:118)
+17/08/22 10:59:02 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:02 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:02 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[19] at show at HBaseSource.scala:118), which has no missing parents
+17/08/22 10:59:02 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 95.7 KB, free 366.2 MB)
+17/08/22 10:59:02 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 35.9 KB, free 366.2 MB)
+17/08/22 10:59:02 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.57.17.175:58930 (size: 35.9 KB, free: 366.3 MB)
+17/08/22 10:59:02 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:02 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[19] at show at HBaseSource.scala:118)
+17/08/22 10:59:02 INFO YarnScheduler: Adding task set 4.0 with 1 tasks
+17/08/22 10:59:02 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 9, h3, executor 2, partition 0, NODE_LOCAL, 7722 bytes)
+17/08/22 10:59:02 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on h3:19533 (size: 35.9 KB, free: 366.3 MB)
+17/08/22 10:59:02 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 9) in 278 ms on h3 (executor 2) (1/1)
+17/08/22 10:59:02 INFO YarnScheduler: Removed TaskSet 4.0, whose tasks have all completed, from pool
+17/08/22 10:59:02 INFO DAGScheduler: ResultStage 4 (show at HBaseSource.scala:118) finished in 0.280 s
+17/08/22 10:59:02 INFO DAGScheduler: Job 4 finished: show at HBaseSource.scala:118, took 0.328472 s
+17/08/22 10:59:02 INFO SparkContext: Starting job: show at HBaseSource.scala:118
+17/08/22 10:59:02 INFO DAGScheduler: Got job 5 (show at HBaseSource.scala:118) with 3 output partitions
+17/08/22 10:59:02 INFO DAGScheduler: Final stage: ResultStage 5 (show at HBaseSource.scala:118)
+17/08/22 10:59:02 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:02 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:02 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[19] at show at HBaseSource.scala:118), which has no missing parents
+17/08/22 10:59:02 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 95.7 KB, free 366.1 MB)
+17/08/22 10:59:02 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 35.9 KB, free 366.0 MB)
+17/08/22 10:59:02 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.57.17.175:58930 (size: 35.9 KB, free: 366.2 MB)
+17/08/22 10:59:02 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:02 INFO DAGScheduler: Submitting 3 missing tasks from ResultStage 5 (MapPartitionsRDD[19] at show at HBaseSource.scala:118)
+17/08/22 10:59:02 INFO YarnScheduler: Adding task set 5.0 with 3 tasks
+17/08/22 10:59:02 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 10, h2, executor 1, partition 1, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:02 INFO TaskSetManager: Starting task 1.0 in stage 5.0 (TID 11, h3, executor 2, partition 2, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:03 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on h3:19533 (size: 35.9 KB, free: 366.2 MB)
+17/08/22 10:59:03 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on h2:36398 (size: 35.9 KB, free: 366.3 MB)
+17/08/22 10:59:03 INFO TaskSetManager: Finished task 1.0 in stage 5.0 (TID 11) in 148 ms on h3 (executor 2) (1/3)
+17/08/22 10:59:03 INFO TaskSetManager: Starting task 2.0 in stage 5.0 (TID 12, h2, executor 1, partition 3, NODE_LOCAL, 7734 bytes)
+17/08/22 10:59:03 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 10) in 183 ms on h2 (executor 1) (2/3)
+17/08/22 10:59:03 INFO TaskSetManager: Finished task 2.0 in stage 5.0 (TID 12) in 122 ms on h2 (executor 1) (3/3)
+17/08/22 10:59:03 INFO YarnScheduler: Removed TaskSet 5.0, whose tasks have all completed, from pool
+17/08/22 10:59:03 INFO DAGScheduler: ResultStage 5 (show at HBaseSource.scala:118) finished in 0.305 s
+17/08/22 10:59:03 INFO DAGScheduler: Job 5 finished: show at HBaseSource.scala:118, took 0.348925 s
+17/08/22 10:59:03 INFO CodeGenerator: Code generated in 32.69808 ms
++------+-----+
+|  col0| col1|
++------+-----+
+|row000| true|
+|row001|false|
+|row002| true|
+|row003|false|
+|row004| true|
+|row005|false|
++------+-----+
+
+17/08/22 10:59:03 INFO CodeGenerator: Code generated in 42.953764 ms
+17/08/22 10:59:03 INFO SparkContext: Starting job: show at HBaseSource.scala:120
+17/08/22 10:59:03 INFO DAGScheduler: Got job 6 (show at HBaseSource.scala:120) with 1 output partitions
+17/08/22 10:59:03 INFO DAGScheduler: Final stage: ResultStage 6 (show at HBaseSource.scala:120)
+17/08/22 10:59:03 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:03 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:03 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[23] at show at HBaseSource.scala:120), which has no missing parents
+17/08/22 10:59:03 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 96.5 KB, free 365.9 MB)
+17/08/22 10:59:03 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 36.3 KB, free 365.9 MB)
+17/08/22 10:59:03 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 10.57.17.175:58930 (size: 36.3 KB, free: 366.2 MB)
+17/08/22 10:59:03 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:03 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[23] at show at HBaseSource.scala:120)
+17/08/22 10:59:03 INFO YarnScheduler: Adding task set 6.0 with 1 tasks
+17/08/22 10:59:03 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 13, h3, executor 2, partition 0, NODE_LOCAL, 7727 bytes)
+17/08/22 10:59:03 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on h3:19533 (size: 36.3 KB, free: 366.2 MB)
+17/08/22 10:59:03 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 13) in 263 ms on h3 (executor 2) (1/1)
+17/08/22 10:59:03 INFO YarnScheduler: Removed TaskSet 6.0, whose tasks have all completed, from pool
+17/08/22 10:59:03 INFO DAGScheduler: ResultStage 6 (show at HBaseSource.scala:120) finished in 0.264 s
+17/08/22 10:59:03 INFO DAGScheduler: Job 6 finished: show at HBaseSource.scala:120, took 0.314044 s
+17/08/22 10:59:03 INFO SparkContext: Starting job: show at HBaseSource.scala:120
+17/08/22 10:59:03 INFO DAGScheduler: Got job 7 (show at HBaseSource.scala:120) with 3 output partitions
+17/08/22 10:59:03 INFO DAGScheduler: Final stage: ResultStage 7 (show at HBaseSource.scala:120)
+17/08/22 10:59:03 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:03 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:03 INFO DAGScheduler: Submitting ResultStage 7 (MapPartitionsRDD[23] at show at HBaseSource.scala:120), which has no missing parents
+17/08/22 10:59:03 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 96.5 KB, free 365.8 MB)
+17/08/22 10:59:03 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 36.3 KB, free 365.8 MB)
+17/08/22 10:59:03 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 10.57.17.175:58930 (size: 36.3 KB, free: 366.2 MB)
+17/08/22 10:59:03 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:03 INFO DAGScheduler: Submitting 3 missing tasks from ResultStage 7 (MapPartitionsRDD[23] at show at HBaseSource.scala:120)
+17/08/22 10:59:03 INFO YarnScheduler: Adding task set 7.0 with 3 tasks
+17/08/22 10:59:03 INFO TaskSetManager: Starting task 1.0 in stage 7.0 (TID 14, h3, executor 2, partition 2, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:03 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 15, h2, executor 1, partition 1, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:03 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on h2:36398 (size: 36.3 KB, free: 366.2 MB)
+17/08/22 10:59:04 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on h3:19533 (size: 36.3 KB, free: 366.2 MB)
+17/08/22 10:59:04 INFO TaskSetManager: Finished task 1.0 in stage 7.0 (TID 14) in 177 ms on h3 (executor 2) (1/3)
+17/08/22 10:59:04 INFO TaskSetManager: Starting task 2.0 in stage 7.0 (TID 16, h2, executor 1, partition 3, NODE_LOCAL, 7734 bytes)
+17/08/22 10:59:04 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 15) in 224 ms on h2 (executor 1) (2/3)
+17/08/22 10:59:04 INFO TaskSetManager: Finished task 2.0 in stage 7.0 (TID 16) in 81 ms on h2 (executor 1) (3/3)
+17/08/22 10:59:04 INFO YarnScheduler: Removed TaskSet 7.0, whose tasks have all completed, from pool
+17/08/22 10:59:04 INFO DAGScheduler: ResultStage 7 (show at HBaseSource.scala:120) finished in 0.305 s
+17/08/22 10:59:04 INFO DAGScheduler: Job 7 finished: show at HBaseSource.scala:120, took 0.362484 s
++------+-----+
+|  col0| col1|
++------+-----+
+|row000| true|
+|row001|false|
+|row002| true|
+|row003|false|
+|row004| true|
+|row005|false|
++------+-----+
+
+17/08/22 10:59:04 INFO CodeGenerator: Code generated in 32.34239 ms
+17/08/22 10:59:04 INFO SparkContext: Starting job: show at HBaseSource.scala:122
+17/08/22 10:59:04 INFO DAGScheduler: Got job 8 (show at HBaseSource.scala:122) with 1 output partitions
+17/08/22 10:59:04 INFO DAGScheduler: Final stage: ResultStage 8 (show at HBaseSource.scala:122)
+17/08/22 10:59:04 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:04 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:04 INFO DAGScheduler: Submitting ResultStage 8 (MapPartitionsRDD[27] at show at HBaseSource.scala:122), which has no missing parents
+17/08/22 10:59:04 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 95.7 KB, free 365.7 MB)
+17/08/22 10:59:04 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 35.9 KB, free 365.7 MB)
+17/08/22 10:59:04 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 10.57.17.175:58930 (size: 35.9 KB, free: 366.1 MB)
+17/08/22 10:59:04 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:04 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[27] at show at HBaseSource.scala:122)
+17/08/22 10:59:04 INFO YarnScheduler: Adding task set 8.0 with 1 tasks
+17/08/22 10:59:04 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 17, h2, executor 1, partition 0, NODE_LOCAL, 7734 bytes)
+17/08/22 10:59:04 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on h2:36398 (size: 35.9 KB, free: 366.2 MB)
+17/08/22 10:59:04 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 17) in 161 ms on h2 (executor 1) (1/1)
+17/08/22 10:59:04 INFO YarnScheduler: Removed TaskSet 8.0, whose tasks have all completed, from pool
+17/08/22 10:59:04 INFO DAGScheduler: ResultStage 8 (show at HBaseSource.scala:122) finished in 0.164 s
+17/08/22 10:59:04 INFO DAGScheduler: Job 8 finished: show at HBaseSource.scala:122, took 0.206091 s
+17/08/22 10:59:04 INFO SparkContext: Starting job: show at HBaseSource.scala:122
+17/08/22 10:59:04 INFO DAGScheduler: Got job 9 (show at HBaseSource.scala:122) with 1 output partitions
+17/08/22 10:59:04 INFO DAGScheduler: Final stage: ResultStage 9 (show at HBaseSource.scala:122)
+17/08/22 10:59:04 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:04 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:04 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[27] at show at HBaseSource.scala:122), which has no missing parents
+17/08/22 10:59:04 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 95.7 KB, free 365.6 MB)
+17/08/22 10:59:04 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 35.9 KB, free 365.5 MB)
+17/08/22 10:59:04 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 10.57.17.175:58930 (size: 35.9 KB, free: 366.1 MB)
+17/08/22 10:59:04 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:04 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (MapPartitionsRDD[27] at show at HBaseSource.scala:122)
+17/08/22 10:59:04 INFO YarnScheduler: Adding task set 9.0 with 1 tasks
+17/08/22 10:59:04 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 18, h3, executor 2, partition 1, NODE_LOCAL, 7727 bytes)
+17/08/22 10:59:04 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on h3:19533 (size: 35.9 KB, free: 366.1 MB)
+17/08/22 10:59:04 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 18) in 225 ms on h3 (executor 2) (1/1)
+17/08/22 10:59:04 INFO YarnScheduler: Removed TaskSet 9.0, whose tasks have all completed, from pool
+17/08/22 10:59:04 INFO DAGScheduler: ResultStage 9 (show at HBaseSource.scala:122) finished in 0.226 s
+17/08/22 10:59:04 INFO DAGScheduler: Job 9 finished: show at HBaseSource.scala:122, took 0.266783 s
++------+-----+
+|  col0| col1|
++------+-----+
+|row251|false|
+|row252| true|
+|row253|false|
+|row254| true|
+|row255|false|
++------+-----+
+
+17/08/22 10:59:04 INFO SparkSqlParser: Parsing command: table1
+17/08/22 10:59:04 INFO SparkSqlParser: Parsing command: select count(col1) from table1 where col0 < 'row050'
+17/08/22 10:59:05 INFO CodeGenerator: Code generated in 35.933868 ms
+17/08/22 10:59:05 INFO CodeGenerator: Code generated in 36.861912 ms
+17/08/22 10:59:05 INFO SparkContext: Starting job: show at HBaseSource.scala:125
+17/08/22 10:59:05 INFO DAGScheduler: Registering RDD 32 (show at HBaseSource.scala:125)
+17/08/22 10:59:05 INFO DAGScheduler: Got job 10 (show at HBaseSource.scala:125) with 1 output partitions
+17/08/22 10:59:05 INFO DAGScheduler: Final stage: ResultStage 11 (show at HBaseSource.scala:125)
+17/08/22 10:59:05 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 10)
+17/08/22 10:59:05 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 10)
+17/08/22 10:59:05 INFO DAGScheduler: Submitting ShuffleMapStage 10 (MapPartitionsRDD[32] at show at HBaseSource.scala:125), which has no missing parents
+17/08/22 10:59:05 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 99.1 KB, free 365.4 MB)
+17/08/22 10:59:05 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 37.5 KB, free 365.4 MB)
+17/08/22 10:59:05 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 10.57.17.175:58930 (size: 37.5 KB, free: 366.1 MB)
+17/08/22 10:59:05 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:05 INFO DAGScheduler: Submitting 4 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[32] at show at HBaseSource.scala:125)
+17/08/22 10:59:05 INFO YarnScheduler: Adding task set 10.0 with 4 tasks
+17/08/22 10:59:05 INFO TaskSetManager: Starting task 1.0 in stage 10.0 (TID 19, h2, executor 1, partition 1, NODE_LOCAL, 7632 bytes)
+17/08/22 10:59:05 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 20, h3, executor 2, partition 0, NODE_LOCAL, 7716 bytes)
+17/08/22 10:59:05 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on h2:36398 (size: 37.5 KB, free: 366.2 MB)
+17/08/22 10:59:05 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on h3:19533 (size: 37.5 KB, free: 366.1 MB)
+17/08/22 10:59:05 INFO TaskSetManager: Starting task 3.0 in stage 10.0 (TID 21, h2, executor 1, partition 3, NODE_LOCAL, 7723 bytes)
+17/08/22 10:59:05 INFO TaskSetManager: Finished task 1.0 in stage 10.0 (TID 19) in 327 ms on h2 (executor 1) (1/4)
+17/08/22 10:59:05 INFO TaskSetManager: Finished task 3.0 in stage 10.0 (TID 21) in 88 ms on h2 (executor 1) (2/4)
+17/08/22 10:59:06 INFO TaskSetManager: Starting task 2.0 in stage 10.0 (TID 22, h3, executor 2, partition 2, NODE_LOCAL, 7632 bytes)
+17/08/22 10:59:06 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 20) in 511 ms on h3 (executor 2) (3/4)
+17/08/22 10:59:06 INFO TaskSetManager: Finished task 2.0 in stage 10.0 (TID 22) in 210 ms on h3 (executor 2) (4/4)
+17/08/22 10:59:06 INFO YarnScheduler: Removed TaskSet 10.0, whose tasks have all completed, from pool
+17/08/22 10:59:06 INFO DAGScheduler: ShuffleMapStage 10 (show at HBaseSource.scala:125) finished in 0.728 s
+17/08/22 10:59:06 INFO DAGScheduler: looking for newly runnable stages
+17/08/22 10:59:06 INFO DAGScheduler: running: Set()
+17/08/22 10:59:06 INFO DAGScheduler: waiting: Set(ResultStage 11)
+17/08/22 10:59:06 INFO DAGScheduler: failed: Set()
+17/08/22 10:59:06 INFO DAGScheduler: Submitting ResultStage 11 (MapPartitionsRDD[35] at show at HBaseSource.scala:125), which has no missing parents
+17/08/22 10:59:06 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 6.9 KB, free 365.4 MB)
+17/08/22 10:59:06 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 3.7 KB, free 365.4 MB)
+17/08/22 10:59:06 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 10.57.17.175:58930 (size: 3.7 KB, free: 366.0 MB)
+17/08/22 10:59:06 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:06 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (MapPartitionsRDD[35] at show at HBaseSource.scala:125)
+17/08/22 10:59:06 INFO YarnScheduler: Adding task set 11.0 with 1 tasks
+17/08/22 10:59:06 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 23, h2, executor 1, partition 0, NODE_LOCAL, 5907 bytes)
+17/08/22 10:59:06 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on h2:36398 (size: 3.7 KB, free: 366.2 MB)
+17/08/22 10:59:06 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 10.57.17.177:25928
+17/08/22 10:59:06 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 154 bytes
+17/08/22 10:59:06 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 23) in 249 ms on h2 (executor 1) (1/1)
+17/08/22 10:59:06 INFO YarnScheduler: Removed TaskSet 11.0, whose tasks have all completed, from pool
+17/08/22 10:59:06 INFO DAGScheduler: ResultStage 11 (show at HBaseSource.scala:125) finished in 0.251 s
+17/08/22 10:59:06 INFO DAGScheduler: Job 10 finished: show at HBaseSource.scala:125, took 1.090805 s
+17/08/22 10:59:06 INFO CodeGenerator: Code generated in 24.153687 ms
++-----------+
+|count(col1)|
++-----------+
+|         50|
++-----------+
+
+17/08/22 10:59:06 INFO CatalystSqlParser: Parsing command: string
+17/08/22 10:59:06 INFO CatalystSqlParser: Parsing command: boolean
+17/08/22 10:59:06 INFO CatalystSqlParser: Parsing command: double
+17/08/22 10:59:06 INFO CatalystSqlParser: Parsing command: float
+17/08/22 10:59:06 INFO CatalystSqlParser: Parsing command: int
+17/08/22 10:59:06 INFO CatalystSqlParser: Parsing command: bigint
+17/08/22 10:59:06 INFO CatalystSqlParser: Parsing command: smallint
+17/08/22 10:59:06 INFO CatalystSqlParser: Parsing command: string
+17/08/22 10:59:06 INFO CatalystSqlParser: Parsing command: tinyint
+17/08/22 10:59:06 INFO SparkContext: Starting job: show at HBaseSource.scala:129
+17/08/22 10:59:06 INFO DAGScheduler: Got job 11 (show at HBaseSource.scala:129) with 1 output partitions
+17/08/22 10:59:06 INFO DAGScheduler: Final stage: ResultStage 12 (show at HBaseSource.scala:129)
+17/08/22 10:59:06 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:06 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:06 INFO DAGScheduler: Submitting ResultStage 12 (MapPartitionsRDD[39] at show at HBaseSource.scala:129), which has no missing parents
+17/08/22 10:59:06 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 96.2 KB, free 365.3 MB)
+17/08/22 10:59:06 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 36.0 KB, free 365.3 MB)
+17/08/22 10:59:06 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 10.57.17.175:58930 (size: 36.0 KB, free: 366.0 MB)
+17/08/22 10:59:06 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:06 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 12 (MapPartitionsRDD[39] at show at HBaseSource.scala:129)
+17/08/22 10:59:06 INFO YarnScheduler: Adding task set 12.0 with 1 tasks
+17/08/22 10:59:06 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 24, h2, executor 1, partition 0, NODE_LOCAL, 7636 bytes)
+17/08/22 10:59:06 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on h2:36398 (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:06 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 24) in 81 ms on h2 (executor 1) (1/1)
+17/08/22 10:59:06 INFO YarnScheduler: Removed TaskSet 12.0, whose tasks have all completed, from pool
+17/08/22 10:59:06 INFO DAGScheduler: ResultStage 12 (show at HBaseSource.scala:129) finished in 0.084 s
+17/08/22 10:59:06 INFO DAGScheduler: Job 11 finished: show at HBaseSource.scala:129, took 0.140159 s
+17/08/22 10:59:06 INFO SparkContext: Starting job: show at HBaseSource.scala:129
+17/08/22 10:59:06 INFO DAGScheduler: Got job 12 (show at HBaseSource.scala:129) with 4 output partitions
+17/08/22 10:59:06 INFO DAGScheduler: Final stage: ResultStage 13 (show at HBaseSource.scala:129)
+17/08/22 10:59:06 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:06 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:06 INFO DAGScheduler: Submitting ResultStage 13 (MapPartitionsRDD[39] at show at HBaseSource.scala:129), which has no missing parents
+17/08/22 10:59:06 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 96.2 KB, free 365.2 MB)
+17/08/22 10:59:06 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 36.0 KB, free 365.1 MB)
+17/08/22 10:59:06 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 10.57.17.175:58930 (size: 36.0 KB, free: 366.0 MB)
+17/08/22 10:59:06 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:06 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 13 (MapPartitionsRDD[39] at show at HBaseSource.scala:129)
+17/08/22 10:59:06 INFO YarnScheduler: Adding task set 13.0 with 4 tasks
+17/08/22 10:59:06 INFO TaskSetManager: Starting task 2.0 in stage 13.0 (TID 25, h2, executor 1, partition 3, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:06 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 26, h3, executor 2, partition 1, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:06 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on h2:36398 (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:06 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on h3:19533 (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:07 INFO TaskSetManager: Starting task 1.0 in stage 13.0 (TID 27, h3, executor 2, partition 2, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 26) in 117 ms on h3 (executor 2) (1/4)
+17/08/22 10:59:07 INFO TaskSetManager: Starting task 3.0 in stage 13.0 (TID 28, h2, executor 1, partition 4, NODE_LOCAL, 7622 bytes)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 2.0 in stage 13.0 (TID 25) in 149 ms on h2 (executor 1) (2/4)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 1.0 in stage 13.0 (TID 27) in 35 ms on h3 (executor 2) (3/4)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 3.0 in stage 13.0 (TID 28) in 68 ms on h2 (executor 1) (4/4)
+17/08/22 10:59:07 INFO YarnScheduler: Removed TaskSet 13.0, whose tasks have all completed, from pool
+17/08/22 10:59:07 INFO DAGScheduler: ResultStage 13 (show at HBaseSource.scala:129) finished in 0.215 s
+17/08/22 10:59:07 INFO DAGScheduler: Job 12 finished: show at HBaseSource.scala:129, took 0.264739 s
++------+-----+----+----+----+----+----+--------------+----+
+|  col0| col1|col2|col3|col4|col5|col6|          col7|col8|
++------+-----+----+----+----+----+----+--------------+----+
+|row000| true| 0.0| 0.0|   0|   0|   0| String0 extra|   0|
+|row001|false| 1.0| 1.0|   1|   1|   1| String1 extra|   1|
+|row002| true| 2.0| 2.0|   2|   2|   2| String2 extra|   2|
+|row003|false| 3.0| 3.0|   3|   3|   3| String3 extra|   3|
+|row004| true| 4.0| 4.0|   4|   4|   4| String4 extra|   4|
+|row005|false| 5.0| 5.0|   5|   5|   5| String5 extra|   5|
+|row006| true| 6.0| 6.0|   6|   6|   6| String6 extra|   6|
+|row007|false| 7.0| 7.0|   7|   7|   7| String7 extra|   7|
+|row008| true| 8.0| 8.0|   8|   8|   8| String8 extra|   8|
+|row009|false| 9.0| 9.0|   9|   9|   9| String9 extra|   9|
+|row010| true|10.0|10.0|  10|  10|  10|String10 extra|  10|
+|row011|false|11.0|11.0|  11|  11|  11|String11 extra|  11|
+|row012| true|12.0|12.0|  12|  12|  12|String12 extra|  12|
+|row013|false|13.0|13.0|  13|  13|  13|String13 extra|  13|
+|row014| true|14.0|14.0|  14|  14|  14|String14 extra|  14|
+|row015|false|15.0|15.0|  15|  15|  15|String15 extra|  15|
+|row016| true|16.0|16.0|  16|  16|  16|String16 extra|  16|
+|row017|false|17.0|17.0|  17|  17|  17|String17 extra|  17|
+|row018| true|18.0|18.0|  18|  18|  18|String18 extra|  18|
+|row019|false|19.0|19.0|  19|  19|  19|String19 extra|  19|
++------+-----+----+----+----+----+----+--------------+----+
+only showing top 20 rows
+
+17/08/22 10:59:07 INFO SparkContext: Starting job: show at HBaseSource.scala:131
+17/08/22 10:59:07 INFO DAGScheduler: Got job 13 (show at HBaseSource.scala:131) with 1 output partitions
+17/08/22 10:59:07 INFO DAGScheduler: Final stage: ResultStage 14 (show at HBaseSource.scala:131)
+17/08/22 10:59:07 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:07 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:07 INFO DAGScheduler: Submitting ResultStage 14 (MapPartitionsRDD[43] at show at HBaseSource.scala:131), which has no missing parents
+17/08/22 10:59:07 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 95.7 KB, free 365.0 MB)
+17/08/22 10:59:07 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 35.9 KB, free 365.0 MB)
+17/08/22 10:59:07 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 10.57.17.175:58930 (size: 35.9 KB, free: 365.9 MB)
+17/08/22 10:59:07 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:07 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 14 (MapPartitionsRDD[43] at show at HBaseSource.scala:131)
+17/08/22 10:59:07 INFO YarnScheduler: Adding task set 14.0 with 1 tasks
+17/08/22 10:59:07 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 29, h2, executor 1, partition 0, NODE_LOCAL, 7727 bytes)
+17/08/22 10:59:07 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on h2:36398 (size: 35.9 KB, free: 366.0 MB)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 29) in 86 ms on h2 (executor 1) (1/1)
+17/08/22 10:59:07 INFO YarnScheduler: Removed TaskSet 14.0, whose tasks have all completed, from pool
+17/08/22 10:59:07 INFO DAGScheduler: ResultStage 14 (show at HBaseSource.scala:131) finished in 0.087 s
+17/08/22 10:59:07 INFO DAGScheduler: Job 13 finished: show at HBaseSource.scala:131, took 0.116073 s
+17/08/22 10:59:07 INFO SparkContext: Starting job: show at HBaseSource.scala:131
+17/08/22 10:59:07 INFO DAGScheduler: Got job 14 (show at HBaseSource.scala:131) with 3 output partitions
+17/08/22 10:59:07 INFO DAGScheduler: Final stage: ResultStage 15 (show at HBaseSource.scala:131)
+17/08/22 10:59:07 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:07 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:07 INFO DAGScheduler: Submitting ResultStage 15 (MapPartitionsRDD[43] at show at HBaseSource.scala:131), which has no missing parents
+17/08/22 10:59:07 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 95.7 KB, free 364.9 MB)
+17/08/22 10:59:07 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 35.9 KB, free 364.9 MB)
+17/08/22 10:59:07 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 10.57.17.175:58930 (size: 35.9 KB, free: 365.9 MB)
+17/08/22 10:59:07 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:07 INFO DAGScheduler: Submitting 3 missing tasks from ResultStage 15 (MapPartitionsRDD[43] at show at HBaseSource.scala:131)
+17/08/22 10:59:07 INFO YarnScheduler: Adding task set 15.0 with 3 tasks
+17/08/22 10:59:07 INFO TaskSetManager: Starting task 0.0 in stage 15.0 (TID 30, h3, executor 2, partition 1, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:07 INFO TaskSetManager: Starting task 2.0 in stage 15.0 (TID 31, h2, executor 1, partition 3, NODE_LOCAL, 7734 bytes)
+17/08/22 10:59:07 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on h3:19533 (size: 35.9 KB, free: 366.0 MB)
+17/08/22 10:59:07 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on h2:36398 (size: 35.9 KB, free: 366.0 MB)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 2.0 in stage 15.0 (TID 31) in 98 ms on h2 (executor 1) (1/3)
+17/08/22 10:59:07 INFO TaskSetManager: Starting task 1.0 in stage 15.0 (TID 32, h3, executor 2, partition 2, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 0.0 in stage 15.0 (TID 30) in 107 ms on h3 (executor 2) (2/3)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 1.0 in stage 15.0 (TID 32) in 73 ms on h3 (executor 2) (3/3)
+17/08/22 10:59:07 INFO YarnScheduler: Removed TaskSet 15.0, whose tasks have all completed, from pool
+17/08/22 10:59:07 INFO DAGScheduler: ResultStage 15 (show at HBaseSource.scala:131) finished in 0.179 s
+17/08/22 10:59:07 INFO DAGScheduler: Job 14 finished: show at HBaseSource.scala:131, took 0.205470 s
++------+-----+
+|  col0| col1|
++------+-----+
+|row000| true|
+|row001|false|
+|row002| true|
+|row003|false|
+|row004| true|
+|row005|false|
++------+-----+
+
+17/08/22 10:59:07 INFO SparkContext: Starting job: show at HBaseSource.scala:133
+17/08/22 10:59:07 INFO DAGScheduler: Got job 15 (show at HBaseSource.scala:133) with 1 output partitions
+17/08/22 10:59:07 INFO DAGScheduler: Final stage: ResultStage 16 (show at HBaseSource.scala:133)
+17/08/22 10:59:07 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:07 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:07 INFO DAGScheduler: Submitting ResultStage 16 (MapPartitionsRDD[47] at show at HBaseSource.scala:133), which has no missing parents
+17/08/22 10:59:07 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 96.5 KB, free 364.8 MB)
+17/08/22 10:59:07 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 36.3 KB, free 364.7 MB)
+17/08/22 10:59:07 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 10.57.17.175:58930 (size: 36.3 KB, free: 365.9 MB)
+17/08/22 10:59:07 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:07 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 16 (MapPartitionsRDD[47] at show at HBaseSource.scala:133)
+17/08/22 10:59:07 INFO YarnScheduler: Adding task set 16.0 with 1 tasks
+17/08/22 10:59:07 INFO TaskSetManager: Starting task 0.0 in stage 16.0 (TID 33, h2, executor 1, partition 0, NODE_LOCAL, 7727 bytes)
+17/08/22 10:59:07 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on h2:36398 (size: 36.3 KB, free: 366.0 MB)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 0.0 in stage 16.0 (TID 33) in 81 ms on h2 (executor 1) (1/1)
+17/08/22 10:59:07 INFO YarnScheduler: Removed TaskSet 16.0, whose tasks have all completed, from pool
+17/08/22 10:59:07 INFO DAGScheduler: ResultStage 16 (show at HBaseSource.scala:133) finished in 0.082 s
+17/08/22 10:59:07 INFO DAGScheduler: Job 15 finished: show at HBaseSource.scala:133, took 0.108194 s
+17/08/22 10:59:07 INFO SparkContext: Starting job: show at HBaseSource.scala:133
+17/08/22 10:59:07 INFO DAGScheduler: Got job 16 (show at HBaseSource.scala:133) with 3 output partitions
+17/08/22 10:59:07 INFO DAGScheduler: Final stage: ResultStage 17 (show at HBaseSource.scala:133)
+17/08/22 10:59:07 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:07 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:07 INFO DAGScheduler: Submitting ResultStage 17 (MapPartitionsRDD[47] at show at HBaseSource.scala:133), which has no missing parents
+17/08/22 10:59:07 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 96.5 KB, free 364.6 MB)
+17/08/22 10:59:07 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 36.3 KB, free 364.6 MB)
+17/08/22 10:59:07 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 10.57.17.175:58930 (size: 36.3 KB, free: 365.8 MB)
+17/08/22 10:59:07 INFO SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:07 INFO DAGScheduler: Submitting 3 missing tasks from ResultStage 17 (MapPartitionsRDD[47] at show at HBaseSource.scala:133)
+17/08/22 10:59:07 INFO YarnScheduler: Adding task set 17.0 with 3 tasks
+17/08/22 10:59:07 INFO TaskSetManager: Starting task 0.0 in stage 17.0 (TID 34, h3, executor 2, partition 1, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:07 INFO TaskSetManager: Starting task 2.0 in stage 17.0 (TID 35, h2, executor 1, partition 3, NODE_LOCAL, 7734 bytes)
+17/08/22 10:59:07 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on h2:36398 (size: 36.3 KB, free: 365.9 MB)
+17/08/22 10:59:07 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on h3:19533 (size: 36.3 KB, free: 366.0 MB)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 2.0 in stage 17.0 (TID 35) in 89 ms on h2 (executor 1) (1/3)
+17/08/22 10:59:07 INFO TaskSetManager: Starting task 1.0 in stage 17.0 (TID 36, h3, executor 2, partition 2, NODE_LOCAL, 7643 bytes)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 0.0 in stage 17.0 (TID 34) in 99 ms on h3 (executor 2) (2/3)
+17/08/22 10:59:07 INFO TaskSetManager: Finished task 1.0 in stage 17.0 (TID 36) in 31 ms on h3 (executor 2) (3/3)
+17/08/22 10:59:07 INFO YarnScheduler: Removed TaskSet 17.0, whose tasks have all completed, from pool
+17/08/22 10:59:07 INFO DAGScheduler: ResultStage 17 (show at HBaseSource.scala:133) finished in 0.131 s
+17/08/22 10:59:07 INFO DAGScheduler: Job 16 finished: show at HBaseSource.scala:133, took 0.179784 s
++------+-----+
+|  col0| col1|
++------+-----+
+|row000| true|
+|row001|false|
+|row002| true|
+|row003|false|
+|row004| true|
+|row005|false|
++------+-----+
+
+17/08/22 10:59:08 INFO SparkContext: Starting job: show at HBaseSource.scala:135
+17/08/22 10:59:08 INFO DAGScheduler: Got job 17 (show at HBaseSource.scala:135) with 1 output partitions
+17/08/22 10:59:08 INFO DAGScheduler: Final stage: ResultStage 18 (show at HBaseSource.scala:135)
+17/08/22 10:59:08 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:08 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:08 INFO DAGScheduler: Submitting ResultStage 18 (MapPartitionsRDD[51] at show at HBaseSource.scala:135), which has no missing parents
+17/08/22 10:59:08 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 95.7 KB, free 364.5 MB)
+17/08/22 10:59:08 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 35.9 KB, free 364.5 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 10.57.17.175:58930 (size: 35.9 KB, free: 365.8 MB)
+17/08/22 10:59:08 INFO SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:08 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 18 (MapPartitionsRDD[51] at show at HBaseSource.scala:135)
+17/08/22 10:59:08 INFO YarnScheduler: Adding task set 18.0 with 1 tasks
+17/08/22 10:59:08 INFO TaskSetManager: Starting task 0.0 in stage 18.0 (TID 37, h2, executor 1, partition 0, NODE_LOCAL, 7734 bytes)
+17/08/22 10:59:08 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on h2:36398 (size: 35.9 KB, free: 365.9 MB)
+17/08/22 10:59:08 INFO TaskSetManager: Finished task 0.0 in stage 18.0 (TID 37) in 65 ms on h2 (executor 1) (1/1)
+17/08/22 10:59:08 INFO YarnScheduler: Removed TaskSet 18.0, whose tasks have all completed, from pool
+17/08/22 10:59:08 INFO DAGScheduler: ResultStage 18 (show at HBaseSource.scala:135) finished in 0.067 s
+17/08/22 10:59:08 INFO DAGScheduler: Job 17 finished: show at HBaseSource.scala:135, took 0.104308 s
+17/08/22 10:59:08 INFO SparkContext: Starting job: show at HBaseSource.scala:135
+17/08/22 10:59:08 INFO DAGScheduler: Got job 18 (show at HBaseSource.scala:135) with 1 output partitions
+17/08/22 10:59:08 INFO DAGScheduler: Final stage: ResultStage 19 (show at HBaseSource.scala:135)
+17/08/22 10:59:08 INFO DAGScheduler: Parents of final stage: List()
+17/08/22 10:59:08 INFO DAGScheduler: Missing parents: List()
+17/08/22 10:59:08 INFO DAGScheduler: Submitting ResultStage 19 (MapPartitionsRDD[51] at show at HBaseSource.scala:135), which has no missing parents
+17/08/22 10:59:08 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 95.7 KB, free 364.4 MB)
+17/08/22 10:59:08 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 35.9 KB, free 364.4 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 10.57.17.175:58930 (size: 35.9 KB, free: 365.8 MB)
+17/08/22 10:59:08 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:08 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 19 (MapPartitionsRDD[51] at show at HBaseSource.scala:135)
+17/08/22 10:59:08 INFO YarnScheduler: Adding task set 19.0 with 1 tasks
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 724
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_14_piece0 on 10.57.17.175:58930 in memory (size: 35.9 KB, free: 365.8 MB)
+17/08/22 10:59:08 INFO TaskSetManager: Starting task 0.0 in stage 19.0 (TID 38, h2, executor 1, partition 1, NODE_LOCAL, 7727 bytes)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_14_piece0 on h2:36398 in memory (size: 35.9 KB, free: 365.9 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 712
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 1065
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 719
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 466
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 721
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 612
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 10.57.17.175:58930 in memory (size: 36.3 KB, free: 365.8 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_7_piece0 on h3:19533 in memory (size: 36.3 KB, free: 366.0 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_7_piece0 on h2:36398 in memory (size: 36.3 KB, free: 366.0 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 10.57.17.175:58930 in memory (size: 37.5 KB, free: 365.9 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on h2:36398 (size: 35.9 KB, free: 365.9 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_10_piece0 on h3:19533 in memory (size: 37.5 KB, free: 366.1 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_10_piece0 on h2:36398 in memory (size: 37.5 KB, free: 366.0 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 1064
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 715
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 711
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 720
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 10.57.17.175:58930 in memory (size: 36.0 KB, free: 365.9 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_13_piece0 on h2:36398 in memory (size: 36.0 KB, free: 366.0 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_13_piece0 on h3:19533 in memory (size: 36.0 KB, free: 366.1 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 318
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 723
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 10.57.17.175:58930 in memory (size: 36.3 KB, free: 365.9 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_16_piece0 on h2:36398 in memory (size: 36.3 KB, free: 366.1 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 1212
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 10.57.17.175:58930 in memory (size: 35.9 KB, free: 366.0 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_5_piece0 on h3:19533 in memory (size: 35.9 KB, free: 366.1 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_5_piece0 on h2:36398 in memory (size: 35.9 KB, free: 366.1 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 717
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 714
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 722
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 319
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 894
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 10.57.17.175:58930 in memory (size: 35.9 KB, free: 366.0 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_8_piece0 on h2:36398 in memory (size: 35.9 KB, free: 366.1 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 320
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 713
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 613
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 10.57.17.175:58930 in memory (size: 3.7 KB, free: 366.0 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_11_piece0 on h2:36398 in memory (size: 3.7 KB, free: 366.1 MB)
+17/08/22 10:59:08 INFO TaskSetManager: Finished task 0.0 in stage 19.0 (TID 38) in 99 ms on h2 (executor 1) (1/1)
+17/08/22 10:59:08 INFO YarnScheduler: Removed TaskSet 19.0, whose tasks have all completed, from pool
+17/08/22 10:59:08 INFO DAGScheduler: ResultStage 19 (show at HBaseSource.scala:135) finished in 0.101 s
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 1211
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 10.57.17.175:58930 in memory (size: 35.9 KB, free: 366.1 MB)
+17/08/22 10:59:08 INFO DAGScheduler: Job 18 finished: show at HBaseSource.scala:135, took 0.409505 s
++------+-----+
+|  col0| col1|
++------+-----+
+|row251|false|
+|row252| true|
+|row253|false|
+|row254| true|
+|row255|false|
++------+-----+
+
+17/08/22 10:59:08 INFO SparkSqlParser: Parsing command: table1
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_9_piece0 on h3:19533 in memory (size: 35.9 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 893
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 614
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 10.57.17.175:58930 in memory (size: 35.9 KB, free: 366.1 MB)
+17/08/22 10:59:08 INFO SparkSqlParser: Parsing command: select count(col1) from table1 where col0 < 'row050'
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_4_piece0 on h3:19533 in memory (size: 35.9 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 467
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_17_piece0 on 10.57.17.175:58930 in memory (size: 36.3 KB, free: 366.1 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_17_piece0 on h3:19533 in memory (size: 36.3 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_17_piece0 on h2:36398 in memory (size: 36.3 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 1063
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 10.57.17.175:58930 in memory (size: 35.9 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_18_piece0 on h2:36398 in memory (size: 35.9 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 10.57.17.175:58930 in memory (size: 35.9 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_15_piece0 on h3:19533 in memory (size: 35.9 KB, free: 366.3 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_15_piece0 on h2:36398 in memory (size: 35.9 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 716
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 10.57.17.175:58930 in memory (size: 36.3 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_6_piece0 on h3:19533 in memory (size: 36.3 KB, free: 366.3 MB)
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned shuffle 0
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 465
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 718
+17/08/22 10:59:08 INFO ContextCleaner: Cleaned accumulator 1210
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 10.57.17.175:58930 in memory (size: 36.0 KB, free: 366.3 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Removed broadcast_12_piece0 on h2:36398 in memory (size: 36.0 KB, free: 366.3 MB)
+17/08/22 10:59:08 INFO SparkContext: Starting job: show at HBaseSource.scala:138
+17/08/22 10:59:08 INFO DAGScheduler: Registering RDD 56 (show at HBaseSource.scala:138)
+17/08/22 10:59:08 INFO DAGScheduler: Got job 19 (show at HBaseSource.scala:138) with 1 output partitions
+17/08/22 10:59:08 INFO DAGScheduler: Final stage: ResultStage 21 (show at HBaseSource.scala:138)
+17/08/22 10:59:08 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 20)
+17/08/22 10:59:08 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 20)
+17/08/22 10:59:08 INFO DAGScheduler: Submitting ShuffleMapStage 20 (MapPartitionsRDD[56] at show at HBaseSource.scala:138), which has no missing parents
+17/08/22 10:59:08 INFO MemoryStore: Block broadcast_20 stored as values in memory (estimated size 99.1 KB, free 366.1 MB)
+17/08/22 10:59:08 INFO MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 37.5 KB, free 366.0 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on 10.57.17.175:58930 (size: 37.5 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:08 INFO DAGScheduler: Submitting 4 missing tasks from ShuffleMapStage 20 (MapPartitionsRDD[56] at show at HBaseSource.scala:138)
+17/08/22 10:59:08 INFO YarnScheduler: Adding task set 20.0 with 4 tasks
+17/08/22 10:59:08 INFO TaskSetManager: Starting task 0.0 in stage 20.0 (TID 39, h2, executor 1, partition 0, NODE_LOCAL, 7716 bytes)
+17/08/22 10:59:08 INFO TaskSetManager: Starting task 1.0 in stage 20.0 (TID 40, h3, executor 2, partition 1, NODE_LOCAL, 7632 bytes)
+17/08/22 10:59:08 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on h2:36398 (size: 37.5 KB, free: 366.2 MB)
+17/08/22 10:59:08 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on h3:19533 (size: 37.5 KB, free: 366.3 MB)
+17/08/22 10:59:08 INFO TaskSetManager: Starting task 3.0 in stage 20.0 (TID 41, h2, executor 1, partition 3, NODE_LOCAL, 7723 bytes)
+17/08/22 10:59:08 INFO TaskSetManager: Finished task 0.0 in stage 20.0 (TID 39) in 151 ms on h2 (executor 1) (1/4)
+17/08/22 10:59:09 INFO TaskSetManager: Starting task 2.0 in stage 20.0 (TID 42, h3, executor 2, partition 2, NODE_LOCAL, 7632 bytes)
+17/08/22 10:59:09 INFO TaskSetManager: Finished task 1.0 in stage 20.0 (TID 40) in 303 ms on h3 (executor 2) (2/4)
+17/08/22 10:59:09 INFO TaskSetManager: Finished task 3.0 in stage 20.0 (TID 41) in 200 ms on h2 (executor 1) (3/4)
+17/08/22 10:59:09 INFO TaskSetManager: Finished task 2.0 in stage 20.0 (TID 42) in 256 ms on h3 (executor 2) (4/4)
+17/08/22 10:59:09 INFO YarnScheduler: Removed TaskSet 20.0, whose tasks have all completed, from pool
+17/08/22 10:59:09 INFO DAGScheduler: ShuffleMapStage 20 (show at HBaseSource.scala:138) finished in 0.563 s
+17/08/22 10:59:09 INFO DAGScheduler: looking for newly runnable stages
+17/08/22 10:59:09 INFO DAGScheduler: running: Set()
+17/08/22 10:59:09 INFO DAGScheduler: waiting: Set(ResultStage 21)
+17/08/22 10:59:09 INFO DAGScheduler: failed: Set()
+17/08/22 10:59:09 INFO DAGScheduler: Submitting ResultStage 21 (MapPartitionsRDD[59] at show at HBaseSource.scala:138), which has no missing parents
+17/08/22 10:59:09 INFO MemoryStore: Block broadcast_21 stored as values in memory (estimated size 6.9 KB, free 366.0 MB)
+17/08/22 10:59:09 INFO MemoryStore: Block broadcast_21_piece0 stored as bytes in memory (estimated size 3.7 KB, free 366.0 MB)
+17/08/22 10:59:09 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 10.57.17.175:58930 (size: 3.7 KB, free: 366.2 MB)
+17/08/22 10:59:09 INFO SparkContext: Created broadcast 21 from broadcast at DAGScheduler.scala:996
+17/08/22 10:59:09 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 21 (MapPartitionsRDD[59] at show at HBaseSource.scala:138)
+17/08/22 10:59:09 INFO YarnScheduler: Adding task set 21.0 with 1 tasks
+17/08/22 10:59:09 INFO TaskSetManager: Starting task 0.0 in stage 21.0 (TID 43, h2, executor 1, partition 0, NODE_LOCAL, 5907 bytes)
+17/08/22 10:59:09 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on h2:36398 (size: 3.7 KB, free: 366.2 MB)
+17/08/22 10:59:09 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 10.57.17.177:25928
+17/08/22 10:59:09 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 1 is 154 bytes
+17/08/22 10:59:09 INFO TaskSetManager: Finished task 0.0 in stage 21.0 (TID 43) in 114 ms on h2 (executor 1) (1/1)
+17/08/22 10:59:09 INFO YarnScheduler: Removed TaskSet 21.0, whose tasks have all completed, from pool
+17/08/22 10:59:09 INFO DAGScheduler: ResultStage 21 (show at HBaseSource.scala:138) finished in 0.114 s
+17/08/22 10:59:09 INFO DAGScheduler: Job 19 finished: show at HBaseSource.scala:138, took 0.728550 s
++-----------+
+|count(col1)|
++-----------+
+|         50|
++-----------+
+
+17/08/22 10:59:09 INFO SparkUI: Stopped Spark web UI at http://10.57.17.175:4040
+17/08/22 10:59:09 INFO YarnClientSchedulerBackend: Interrupting monitor thread
+17/08/22 10:59:09 INFO YarnClientSchedulerBackend: Shutting down all executors
+17/08/22 10:59:09 INFO YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+17/08/22 10:59:09 INFO SchedulerExtensionServices: Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+17/08/22 10:59:09 INFO YarnClientSchedulerBackend: Stopped
+17/08/22 10:59:09 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+17/08/22 10:59:09 INFO MemoryStore: MemoryStore cleared
+17/08/22 10:59:09 INFO BlockManager: BlockManager stopped
+17/08/22 10:59:09 INFO BlockManagerMaster: BlockManagerMaster stopped
+17/08/22 10:59:09 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+17/08/22 10:59:09 INFO SparkContext: Successfully stopped SparkContext
+17/08/22 10:59:09 INFO ShutdownHookManager: Shutdown hook called
+17/08/22 10:59:09 INFO ShutdownHookManager: Deleting directory /tmp/spark-77ce6f3e-8da4-4983-b59a-b7199edd061d

@@ -17,6 +17,7 @@
 
         <module>cassandra-examples</module>
         <module>hbase-examples</module>
+        <module>hbase2-examples</module>
         <module>elasticsearch-examples</module>
         <module>crossdata-examples</module>
     </modules>
